@@ -1,3 +1,7 @@
+body {
+    background-color: #fff !important; /* Color gris claro */
+}
+
 .nav-item {
     font-size: 18px;
 }
@@ -43,9 +47,6 @@
     color: #000000; /* Cambia el color del texto a negro */
 }
 
-body {
-    background-color: #fff !important; /* Color gris claro */
-}
 
 .btn-personal{
     margin-top: -7%;
@@ -66,8 +67,16 @@ body {
 }
 
 #items{
-    height: 250px;
+    height: 140px;
     margin-bottom: 20px;
+}
+
+
+.container .row #items img{
+    max-width: 100%;
+    max-height: 80px;
+    width: auto;
+    height: auto;
 }
 
 .container .row{
@@ -84,7 +93,29 @@ body {
 
 .container .row img{
     max-width: 100%;
-    max-height: 230px;
+    max-height: 600px;
     height: auto;
     width: auto;
+}
+
+.container h2{
+    margin-top: 20px;
+    text-align: center;
+}
+
+.container .texto a{
+    color: #808080;
+    text-decoration: none; 
+}
+
+.img-circle{
+    border-radius: 50%;
+}
+
+.container footer img{
+    max-width: 100%;
+    max-height: 300px;
+    width: auto;
+    height: auto;
+    margin-bottom: 100px;
 }
