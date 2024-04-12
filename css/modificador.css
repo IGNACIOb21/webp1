@@ -1,7 +1,0 @@
-.btn-personal{
-    margin-top: -7%;
-    margin-bottom: -7%;
-}
-.offcanvas-start.show .nav-link i {  /* Target icons within the offcanvas-start element when it has the "show" class (i.e., menu is displayed) */
-    display: none; /* Hide the icons */
-  }

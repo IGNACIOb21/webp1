@@ -1,0 +1,62 @@
+.nav-item {
+    font-size: 18px;
+}
+
+
+.tituloA{
+    font-size: 25px;
+    color: black;
+    font-family:Arial Black ,sans-serif;
+    text-align: center;
+    background-color: rgb(205, 216, 108);
+    border-radius: 1rem;
+}
+
+.btn-personal{
+    background-color: rgba(255, 255, 255, 0);
+    color: rgb(0, 0, 0);
+}
+
+/* Estilos cuando el ratón pasa por encima del botón */
+.btn-personal:hover {
+    background-color: rgba(255, 235, 205, 0);
+    color: rgb(8, 0, 126); 
+}
+
+.border25{
+    border-radius: 0.5rem;
+}
+
+.nav-item i {
+    font-size: 18px;
+    
+}
+
+.navbar {
+    background-color:	#e5c15c; /* Cambia #333 por el color que desees */
+}
+.btn{
+    color: black;
+}
+
+.navbar-nav .nav-link {
+    color: #000000; /* Cambia el color del texto a negro */
+}
+
+body {
+    background-color: #8a8a7ade; /* Color gris claro */
+}
+
+.btn-personal{
+    margin-top: -7%;
+    margin-bottom: -7%;
+}
+
+.offcanvas-start.show .nav-link i {  /* Target icons within the offcanvas-start element when it has the "show" class (i.e., menu is displayed) */
+    display: none; /* Hide the icons */
+}
+
+#slider-codersfree {
+    margin-left: 50px;
+    margin-right: 50px;
+}
