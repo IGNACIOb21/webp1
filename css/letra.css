@@ -22,3 +22,13 @@
     background-color: rgba(255, 235, 205, 0);
     color: rgb(8, 0, 126); 
 }
+
+.border25{
+    border-radius: 0.5rem;
+}
+
+.nav-item i {
+    font-size: 18px;
+    
+}
+
