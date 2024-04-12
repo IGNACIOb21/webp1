@@ -41,8 +41,10 @@
                         <li class="nav-item ">
                             <a class="nav-link" href="index.html">Inicio</a>
                         </li>
-                        <li class="nav-item  ">
-                            <a class="nav-link" href="carrito.html"><i class="bi bi-cart-dash">/</i>carito</a>
+                        <li class="nav-item">
+                            <div>
+                                <button class="btn " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="bi bi-cart-dash"></i> Carrito</button>
+                            </div>
                         </li>
                         <li class="nav-item dropdown">
                           <a class="nav-link" href="ini_secion.html">
@@ -59,24 +61,38 @@
         </div>
     </nav>
 
+    <div class="offcanvas offcanvas-end bg-warning" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+            <h2 class="offcanvas-title" id="offcanvasRightLabel" style="font-family: Geneva, sans-serif;"><strong>Mi carrito de compras</strong>
+             <samp><hr></samp>
+            </h2>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body" style="display: flex; flex-direction: column;  align-items: center;">
+            <p style="font-size: 4em; margin: 0;"><i class="bi bi-info-circle-fill"></i></p>
+            <h4><strong>Tu carrito de compras está vacío</strong></h4>
+            <small class="text-body-secondary"><strong>Parece que aún no has elegido tus productos.</strong></small>
+        </div>
+        
+    </div>
+
     <div class="p-3 mb-2 bg-warning-subtle text-dark">
         <div class="d-flex justify-content-center ">
             <div class="p-3 mb-2 bg-warning-subtle text-dark">
 
-                <div class="card bg-primary-subtle text-dark mb-3" style="max-width: 1600px;">
+                <div class="card text-dark mb-3" style="background-color: #e9ebbf; max-width: 1600px;">
                     <div class="row g-0">
                     <div class="col-md-4">
                         <img src="oferta/dog1.jpg" class="img-fluid rounded-start" alt="250">
                     </div>
                     <div class="col-md-8">
                         <div class="card-body">
-                        <h2 class="card-title">Saviorless</h2>
-                        <h5>Explora un mundo maldito</h5>
-                        <p class="card-text">Saviorless es una plataforma artística de acción ambientada en un oscuro 
-                            mundo de fantasía conocido como las Islas Sonrientes, repleta de personajes y criaturas bizarras 
-                            completamente dibujadas y animadas a mano.</p>
-                        <p class="card-text"><small class="text-body-secondary">Empty Head Games es un estudio independiente cubano que ha lanzado hoy, tras ocho años de trabajo 
-                            y luchando contra todo tipo de problemas, el plataformas 2D dibujado a mano Saviorless.</small></p>
+                        <h2 class="card-title">La mejor comida de perro Fir Formula canino</h2>
+                        <p class="card-text h5">Fit Formula Premium es un alimento completo y balanceado para satisfacer las necesidades nutricionales de perros adultos 
+                            en mantención y hembras en lactancia. Formulado con proteínas de alta calidad para músculos y huesos fuertes, ácidos grasos esenciales 
+                            para un pelaje sano y brillante. El gran valor de los ingredientes utilizados, de excelente digestibilidad, se vera reflejado en un menor 
+                            volumen de heces. </p>
+                        <p class="card-text h3"> A solo $35.000 pesos</p>
                         </div>
                     </div>
                     </div>
@@ -86,11 +102,12 @@
                     <div class="row g-0">
                         <div class="col-md-8">
                             <div class="card-body">
-                            <h2 class="card-title">Astra Knights</h2>
-                            <p class="card-text">ASTRA: Knights of Veda es un juego de rol en 2D con mucha historia y arte impresionante. Una plaga 
-                                oscura afecta el mundo de Planis, resultado de un ritual oscuro realizado por el rey loco. Tú y los demás caballeros 
-                                de Veda son los únicos que pueden regresar el mundo a la normalidad.</p>
-                            <p class="card-text"><small class="text-body-secondary">Desarrolladores: FLINT, Flint Inc</small></p>
+                            <h2 class="card-title ">El alimento seco esta en oferta aproveche </h2>
+                            <p class="card-text h5">Nuestro alimento seco ofrece numerosos beneficios para tu mascota. Formulado para promover una salud óptima, vitalidad y 
+                                un sistema inmunológico fuerte, garantiza una vida feliz y saludable. Al elegir nuestro producto, estás invirtiendo en el bienestar duradero 
+                                de tu compañero peludo. ¡Haz de nuestra comida seca la elección principal para tu mascota y disfruta de los resultados positivos en ingerir 
+                                alimentos secos!</p>
+                                <p class="card-text h3">Todo el alimento a un 25% de descuento</p>
                             </div>
                         </div>
                     <div class="col-md-4">
@@ -99,18 +116,19 @@
                     </div>
                 </div>
 
-                <div class="card bg-primary-subtle text-dark mb-3" style="max-width: 1600px;">
+                <div class="card text-dark mb-3" style="background-color: #e9ebbf;max-width: 1600px;">
                     <div class="row g-0">
                     <div class="col-md-4">
                         <img src="oferta/dog3.jpg" class="img-fluid rounded-start" alt="250">
                     </div>
                     <div class="col-md-8">
                         <div class="card-body">
-                        <h2 class="card-title">Deceit 2</h2>
-                        <p class="card-text">Deceit 2 es un juego de terror y deducción social en línea. Infunde el miedo como terror,
-                            haz de detective como inocente o provoca el caos como maldito. Has caído en una trampa con amigos y desconocidos, 
-                            ¿en quién podrás confiar para escapar?</p>
-                        <p class="card-text"><small class="text-body-secondary">Estudio de desarollo: World Makers</small></p>
+                            <h2 class="card-title ">Conosca los mejores articulos para tu mescota</h2>
+                            <p class="card-text h5">Desde alimentos nutritivos hasta juguetes interactivos y accesorios de moda, tenemos todo lo que necesitas para 
+                            mantener a tus amigos peludos felices y saludables. Descubre nuestra selección y bríndales a tus mascotas el amor y 
+                            la atención que se merecen.
+                            </p>
+                        <p class="card-text h3">Aprobecha hay un 30% de descuento</p>
                         </div>
                     </div>
                     </div>
@@ -120,11 +138,13 @@
                     <div class="row g-0">
                         <div class="col-md-8">
                             <div class="card-body">
-                            <h2 class="card-title">Freedom Planet 2</h2>
-                            <p class="card-text">Vuelve el vertiginoso juego de plataformas con nuevas funciones y modos! ¡Conviértete en heroína a tiempo completo y defiende el mundo de Avalice</p>
-                            <p class="card-text">Regresa al variopinto mundo de Avalice para luchar contra una ancestral amenaza en la esperada secuela del éxito indie de plataformas y acción 
-                                Freedom Planet. Han pasado años desde los hechos del juego original y nuestras tres heroínas han perfeccionado sus distintivas habilidades hasta llegar a ser formidables.</p>
-                            <p class="card-text"><small class="text-body-secondary">desarrollado y editado por GalaxyTrail</small></p>
+                            <h2 class="card-title ">Conosca los leeby mas comodos para tu mascota</h2>
+                                <p class="card-text h5">En Leeby, ofrecemos camas para mascotas diseñadas pensando en su comodidad y bienestar. 
+                                    Nuestras camas están fabricadas con materiales de alta calidad para proporcionar el máximo confort y apoyo. 
+                                    Elija Leeby para asegurar que su mascota tenga un lugar acogedor para descansar y recargar energías. Descubra 
+                                    nuestra variedad de camas para mascotas y brinde a su compañero peludo el mejor lugar para dormir
+                                    Ofrecemos una amplia variedad de productos para el cuidado y la diversión de tus mascotas. 
+                                
                             </div>
                         </div>
                     <div class="col-md-4">
@@ -133,18 +153,20 @@
                     </div>
                 </div>
 
-                <div class="card bg-primary-subtle text-dark mb-3" style="max-width: 1600px;">
+                <div class="card  text-dark mb-3" style="background-color: #e9ebbf;max-width: 1600px;">
                     <div class="row g-0">
                     <div class="col-md-4">
                         <img src="oferta/dog5.jpg" class="img-fluid rounded-start" alt="250">
                     </div>
                     <div class="col-md-8">
                         <div class="card-body">
-                        <h2 class="card-title">Deceit 2</h2>
-                        <p class="card-text">Deceit 2 es un juego de terror y deducción social en línea. Infunde el miedo como terror,
-                            haz de detective como inocente o provoca el caos como maldito. Has caído en una trampa con amigos y desconocidos, 
-                            ¿en quién podrás confiar para escapar?</p>
-                        <p class="card-text"><small class="text-body-secondary">Estudio de desarollo: World Makers</small></p>
+                        <h2 class="card-title h5">Los mejores alimentos del mercado </h2>
+                        <p class="card-text">
+                            Explora nuestra amplia selección de alimentos húmedos selectos para mascotas. Con ingredientes de primera calidad 
+                            y sabores irresistibles, nuestros productos satisfacen los gustos más exigentes de tus compañeros peludos. 
+                            Garantiza una nutrición equilibrada y deliciosa para tus mascotas con nuestras opciones de alimentos húmedos selectos. 
+                            Desde recetas gourmet hasta fórmulas especializadas, tenemos todo lo que necesitas para mantener a tus mascotas felices y saludables.</p>
+                        <p class="card-text h3">Con un 25% de descuento compra ya </p>
                         </div>
                     </div>
                     </div>
@@ -155,10 +177,11 @@
                         <div class="col-md-8">
                             <div class="card-body">
                             <h2 class="card-title">Freedom Planet 2</h2>
-                            <p class="card-text">Vuelve el vertiginoso juego de plataformas con nuevas funciones y modos! ¡Conviértete en heroína a tiempo completo y defiende el mundo de Avalice</p>
-                            <p class="card-text">Regresa al variopinto mundo de Avalice para luchar contra una ancestral amenaza en la esperada secuela del éxito indie de plataformas y acción 
-                                Freedom Planet. Han pasado años desde los hechos del juego original y nuestras tres heroínas han perfeccionado sus distintivas habilidades hasta llegar a ser formidables.</p>
-                            <p class="card-text"><small class="text-body-secondary">desarrollado y editado por GalaxyTrail</small></p>
+                            <p class="card-text h5">Descubre nuestra arena TKPet para mascotas, diseñada para brindar una experiencia de higiene superior. 
+                                Con excelente absorción y control de olores, garantiza un entorno limpio y fresco para tu mascota. Fabricada con materiales 
+                                de alta calidad y libre de polvo, proporciona comodidad y bienestar. Mantén a tu mascota feliz y saludable con nuestra arena 
+                                TKPet, la elección perfecta para su cuidado diario.</p>
+                            <p class="card-text h3"><small class="text-body-secondary">Hata con 30% de descunto la arena</small></p>
                             </div>
                         </div>
                     <div class="col-md-4">
@@ -166,18 +189,18 @@
                     </div> 
                     </div>
                 </div>
-                <div class="card bg-primary-subtle text-dark mb-3" style="max-width: 1600px;">
+                <div class="card  text-dark mb-3" style="background-color: #e9ebbf;max-width: 1600px;">
                     <div class="row g-0">
                     <div class="col-md-4">
                         <img src="oferta/dog7.jpg" class="img-fluid rounded-start" alt="250">
                     </div>
                     <div class="col-md-8">
                         <div class="card-body">
-                        <h2 class="card-title">Deceit 2</h2>
-                        <p class="card-text">Deceit 2 es un juego de terror y deducción social en línea. Infunde el miedo como terror,
-                            haz de detective como inocente o provoca el caos como maldito. Has caído en una trampa con amigos y desconocidos, 
-                            ¿en quién podrás confiar para escapar?</p>
-                        <p class="card-text"><small class="text-body-secondary">Estudio de desarollo: World Makers</small></p>
+                        <h2 class="card-title">Los mejores snacks para tu mascota</h2>
+                        <p class="card-text h5">Descubre nuestra variedad de snacks seleccionados para mascotas, elaborados con ingredientes de calidad y sabores irresistibles. 
+                            Cuidadosamente seleccionados para satisfacer los gustos exigentes de tus amigos peludos, nuestros snacks garantizan momentos de placer y bienestar. 
+                            Con opciones saludables y deliciosas, puedes estar seguro de ofrecerle a tu mascota un premio que le encantará.</p>
+                        <p class="card-text h3">Hasta un 30% de descuento</p>
                         </div>
                     </div>
                     </div>
@@ -187,11 +210,14 @@
                     <div class="row g-0">
                         <div class="col-md-8">
                             <div class="card-body">
-                            <h2 class="card-title">Freedom Planet 2</h2>
-                            <p class="card-text">Vuelve el vertiginoso juego de plataformas con nuevas funciones y modos! ¡Conviértete en heroína a tiempo completo y defiende el mundo de Avalice</p>
-                            <p class="card-text">Regresa al variopinto mundo de Avalice para luchar contra una ancestral amenaza en la esperada secuela del éxito indie de plataformas y acción 
-                                Freedom Planet. Han pasado años desde los hechos del juego original y nuestras tres heroínas han perfeccionado sus distintivas habilidades hasta llegar a ser formidables.</p>
-                            <p class="card-text"><small class="text-body-secondary">desarrollado y editado por GalaxyTrail</small></p>
+                            <h2 class="card-title">Productos de verano para mascotas</h2>
+                            <p class="card-text h5">
+                                Explora nuestra selección de productos de verano para mascotas, diseñados para mantenerlas frescas y cómodas durante los meses más cálidos. 
+                                Desde piscinas portátiles hasta juguetes de agua, ofrecemos una amplia variedad de artículos para satisfacer las necesidades de tus amigos 
+                                peludos. Garantiza que tu mascota disfrute del verano al máximo con nuestros productos diseñados especialmente para mantenerlas felices y seguras 
+                                bajo el sol.</p>
+                            
+                            <p class="card-text h3">Compa ya !No te lo pierdas¡</p>
                             </div>
                         </div>
                     <div class="col-md-4">
