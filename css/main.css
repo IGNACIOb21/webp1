@@ -66,21 +66,15 @@ body {
 }
 
 #items{
-    height: 140px;
-    padding-bottom: 110%;
-    margin-bottom: 100px;
+    height: 250px;
+    margin-bottom: 20px;
 }
 
 .container .row{
     justify-content: center;
 }
 
-.container .row #items img{
-    max-width: 100%;
-    max-height: 160px;
-    width: auto;
-    height: auto;
-}
+
 
 .container .row h3{
     font-size: 12px;
