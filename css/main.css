@@ -44,7 +44,7 @@
 }
 
 body {
-    background-color: #8a8a7ade; /* Color gris claro */
+    background-color: #fff !important; /* Color gris claro */
 }
 
 .btn-personal{
@@ -57,6 +57,40 @@ body {
 }
 
 #slider-codersfree {
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+.card-body{
+    background-color: #fff !important;
+}
+
+#items{
+    height: 140px;
+    padding-bottom: 110%;
+    margin-bottom: 100px;
+}
+
+.container .row{
+    justify-content: center;
+}
+
+.container .row #items img{
+    max-width: 100%;
+    max-height: 160px;
+    width: auto;
+    height: auto;
+}
+
+.container .row h3{
+    font-size: 12px;
+    font-family: sans-serif;
+    color: #666666;
+}
+
+.container .row img{
+    max-width: 100%;
+    max-height: 230px;
+    height: auto;
+    width: auto;
 }
