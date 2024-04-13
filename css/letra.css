@@ -1,3 +1,37 @@
+.nav-item {
+    font-size: 18px;
+}
+
+
+.tituloA{
+    font-size: 25px;
+    color: black;
+    font-family:Arial Black ,sans-serif;
+    text-align: center;
+    background-color: rgb(205, 216, 108);
+    border-radius: 1rem;
+}
+
+.btn-personal{
+    background-color: rgba(255, 255, 255, 0);
+    color: rgb(0, 0, 0);
+}
+
+/* Estilos cuando el ratón pasa por encima del botón */
+.btn-personal:hover {
+    background-color: rgba(255, 235, 205, 0);
+    color: rgb(8, 0, 126); 
+}
+
+.border25{
+    border-radius: 0.5rem;
+}
+
+.nav-item i {
+    font-size: 18px;
+    
+}
+
 body{
     margin: 0;
     padding: 0;
@@ -116,5 +150,5 @@ input[type="submit"]:hover{
 }
 
 .registrarse a:hover{ 
-    text-decoration: underline;
+    text-decoration: underline;
 }
