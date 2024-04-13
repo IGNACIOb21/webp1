@@ -50,12 +50,11 @@
                         </li>
                         <li class="nav-item ">
                             <a class="nav-link" href="ofertas.html">Ofertas</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                          <a class="nav-link" href="ini_secion.html">
-                            <i class="bi bi-person"></i> Iniciar sesión 
-                          </a>
-                      </li>
+                            <li class="nav-item">
+                                <div>
+                                    <button class="btn " type="button" data-bs-toggle="offcanvas" data-bs-target="#carrito" aria-controls="offcanvasRight"><i class="bi bi-person"> Inicio de secion</button>
+                                </div>
+                            </li>
                       
                       
                     </ul>
@@ -77,6 +76,37 @@
         </div>
     </div>
 
+    <div class="offcanvas offcanvas-end bg-warning" tabindex="-1" id="carrito" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+            <h2 class="offcanvas-title" id="offcanvasRightLabel" style="font-family: Geneva, sans-serif;"><i class="bi bi-person">
+             <samp><hr></samp>
+            </h2>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body" style="display: flex; flex-direction: column;  align-items: center;">
+          <div class="fomulario">
+            <h1>Inicio de sesion</h1>
+            <form method="post">
+                <div class="username">
+                  <input type="text" required>
+                  <label >nombre de usuario</label>
+                </div>
+                <div class="username">
+                  <input type="password"required>
+                  <label >contrasenna</label>
+                </div>
+                <div class="recordar">¿ Olvido la contrasenna?</div>
+                <input type="submit" value="Inicio">
+                <div class="registrarse">
+                  Quiero hacr el <a href="#">registro</a>
+                </div>
+            </form>
+            
+          </div>
+        </div>
+        
+    </div>
+    
     <div class="container">
         <div class="row justify-content-center">
           <div class="col-md-6">
