@@ -2,18 +2,18 @@ body {
     background-color: #fff !important; /* Color gris claro */
 }
 
-.nav-item {
-    font-size: 18px;
+.fusion-navbar{
+    background-color: #4892c3;
+    height: 25px;
 }
 
-
-.tituloA{
-    font-size: 25px;
-    color: black;
-    font-family:Arial Black ,sans-serif;
+.fusion-navbar p{
     text-align: center;
-    background-color: rgba(205, 216, 108, 0.76);
-    border-radius: 1rem;
+    color: #fff;
+}
+
+.nav-item {
+    font-size: 18px;
 }
 
 .btn-personal{
@@ -57,14 +57,6 @@ body {
     display: none; /* Hide the icons */
 }
 
-#slider-codersfree {
-    margin-left: 150px;
-    margin-right: 150px;
-}
-
-.card-body{
-    background-color: #fff !important;
-}
 
 #items{
     height: 140px;
@@ -74,7 +66,7 @@ body {
 
 .container .row #items img{
     max-width: 100%;
-    max-height: 80px;
+    max-height: 90px;
     width: auto;
     height: auto;
 }
@@ -93,7 +85,7 @@ body {
 
 .container .row img{
     max-width: 100%;
-    max-height: 600px;
+    max-height: 150px;
     height: auto;
     width: auto;
 }

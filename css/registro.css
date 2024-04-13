@@ -1,0 +1,17 @@
+.container .forms{
+    border: 1px solid #000000;
+    padding: 20px;
+    border-radius: 15px;
+    margin-top: 170px;
+    background-color: white;
+}
+
+body {
+    background-image: url('https://s1.1zoom.me/b5050/996/Winter_Squirrels_Snow_Bokeh_Two_Pine_cone_Jump_592278_1920x1200.jpg');
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
+    max-width: 100%;
+    max-height: 100%;
+    overflow: hidden; 
+}
