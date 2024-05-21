@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -7,8 +7,6 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="./css/main.css">
-    <link rel="stylesheet" href="./css/letra.css">
-    <script src="./js/login.js"></script>
   </head>
   <body>
 
@@ -83,105 +81,73 @@
       </div>
       
   </div>
-  <div class="offcanvas offcanvas-end bg-light " tabindex="-1" id="offIniciodesecion" aria-labelledby="offcanvasRightLabel">
-    <div class="offcanvas-header">
-        <h2 class="offcanvas-title" id="offcanvasRightLabel" style="font-family: Geneva, sans-serif;"> <i class="bi bi-person" ></i>
-        <samp><hr></samp>
-        </h2>
-        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-    </div>
-    <div class="offcanvas-body" style="display: flex; flex-direction: column; ">
-      <div class="fomulario">
-        <h1>Inicio de sesion</h1>
-        <form method="post">
-            <div class="username">
-              <input type="text" required>
-              <label >nombre de usuario</label>
+
+    <div class="container">
+      <div class="row">
+          <div class="col-lg-3 order-lg-12">
+            <div class="flex-shrink-0 p-3 " style=" background-color: #e5c05ca2; margin-top: 200px;">
+              <a href="#" class="d-flex align-items-center pb-5 mb-2 link-dark text-decoration-none border-bottom">
+                <svg class="bi me-2" width="0" height="24"><use xlink:href="#bootstrap"></use></svg>
+                <span class="fs-5 fw-semibold">Menu</span>
+              </a>
+              <ul class="list-unstyled ps-0">
+                <li class="mb-2">
+                  <button class="btn btn-toggle align-items-center rounded" data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="true" >
+                    <h4><strong>Comida</strong></h4>
+                  </button>
+                  <div class="collapse " id="home-collapse" >
+                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                      <li><a href="#" class="link-dark rounded">Overview</a></li>
+                      <li><a href="#" class="link-dark rounded">Updates</a></li>
+                      <li><a href="#" class="link-dark rounded">Reports</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="mb-1">
+                  <button class="btn btn-toggle align-items-center rounded" data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-expanded="true">
+                    <h4><strong>Articulos</strong></h4>
+                  </button>
+                  <div class="collapse " id="dashboard-collapse" >
+                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                      <li><a href="#" class="link-dark rounded">Overview</a></li>
+                      <li><a href="#" class="link-dark rounded">Weekly</a></li>
+                      <li><a href="#" class="link-dark rounded">Monthly</a></li>
+                      <li><a href="#" class="link-dark rounded">Annually</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="mb-1">
+                  <button class="btn btn-toggle align-items-center rounded" data-bs-toggle="collapse" data-bs-target="#juegos-collapse" aria-expanded="true">
+                    <h4><strong>Juguetes</strong></h4>
+                  </button>
+                  <div class="collapse " id="juegos-collapse" >
+                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                      <li><a href="#" class="link-dark rounded">Overview</a></li>
+                      <li><a href="#" class="link-dark rounded">Weekly</a></li>
+                      <li><a href="#" class="link-dark rounded">Monthly</a></li>
+                      <li><a href="#" class="link-dark rounded">Annually</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="mb-1">
+                  <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#orders-collapse" aria-expanded="false">
+                    <h4><strong>Arena</strong></h4>
+                  </button>
+                  <div class="collapse" id="orders-collapse">
+                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                      <li><a href="#" class="link-dark rounded">New</a></li>
+                      <li><a href="#" class="link-dark rounded">Processed</a></li>
+                      <li><a href="#" class="link-dark rounded">Shipped</a></li>
+                      <li><a href="#" class="link-dark rounded">Returned</a></li>
+                    </ul>
+                  </div>
+                </li>
+
+                <li class="border-top my-3"></li>
+                
+              </ul>
             </div>
-            <div class="username">
-              <input type="password"required>
-              <label >contrasenna</label>
-            </div>
-            <div class="recordar">¿ Olvido la contrasenna?</div>
-            <input type="submit" value="Inicio">
-            <div class="registrarse">
-              Quiero hacr el <a href="#">registro</a>
-            </div>
-        </form>
-        
-      </div>
-        
-    </div>
-  </div>
-
-
-
-  <div class="container">
-    <div class="row">
-        <div class="col-lg-3 order-lg-12">
-          <div class="flex-shrink-0 p-3 " style=" background-color: #e5c05ca2; margin-top: 200px;">
-            <a href="#" class="d-flex align-items-center pb-5 mb-2 link-dark text-decoration-none border-bottom">
-              <svg class="bi me-2" width="0" height="24"><use xlink:href="#bootstrap"></use></svg>
-              <span class="fs-5 fw-semibold">Menu</span>
-            </a>
-            <ul class="list-unstyled ps-0">
-              <li class="mb-2">
-                <button class="btn btn-toggle align-items-center rounded" data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="true" >
-                  <h4><strong>Comida</strong></h4>
-                </button>
-                <div class="collapse " id="home-collapse" >
-                  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                    <li><a href="#" class="link-dark rounded">Overview</a></li>
-                    <li><a href="#" class="link-dark rounded">Updates</a></li>
-                    <li><a href="#" class="link-dark rounded">Reports</a></li>
-                  </ul>
-                </div>
-              </li>
-              <li class="mb-1">
-                <button class="btn btn-toggle align-items-center rounded" data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-expanded="true">
-                  <h4><strong>Articulos</strong></h4>
-                </button>
-                <div class="collapse " id="dashboard-collapse" >
-                  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                    <li><a href="#" class="link-dark rounded">Overview</a></li>
-                    <li><a href="#" class="link-dark rounded">Weekly</a></li>
-                    <li><a href="#" class="link-dark rounded">Monthly</a></li>
-                    <li><a href="#" class="link-dark rounded">Annually</a></li>
-                  </ul>
-                </div>
-              </li>
-              <li class="mb-1">
-                <button class="btn btn-toggle align-items-center rounded" data-bs-toggle="collapse" data-bs-target="#juegos-collapse" aria-expanded="true">
-                  <h4><strong>Juguetes</strong></h4>
-                </button>
-                <div class="collapse " id="juegos-collapse" >
-                  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                    <li><a href="#" class="link-dark rounded">Overview</a></li>
-                    <li><a href="#" class="link-dark rounded">Weekly</a></li>
-                    <li><a href="#" class="link-dark rounded">Monthly</a></li>
-                    <li><a href="#" class="link-dark rounded">Annually</a></li>
-                  </ul>
-                </div>
-              </li>
-              <li class="mb-1">
-                <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#orders-collapse" aria-expanded="false">
-                  <h4><strong>Arena</strong></h4>
-                </button>
-                <div class="collapse" id="orders-collapse">
-                  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                    <li><a href="#" class="link-dark rounded">New</a></li>
-                    <li><a href="#" class="link-dark rounded">Processed</a></li>
-                    <li><a href="#" class="link-dark rounded">Shipped</a></li>
-                    <li><a href="#" class="link-dark rounded">Returned</a></li>
-                  </ul>
-                </div>
-              </li>
-
-              <li class="border-top my-3"></li>
-              
-            </ul>
           </div>
-        </div>
 
 
           <div class="col-lg-9 order-lg-12">
@@ -200,7 +166,7 @@
                   </div>
                   <div class="carousel-inner carousel-fade ">
                       <div class="carousel-item active carousel-dark" data-bs-interval="3000">
-                          <a href="ofertas.html"><img class="d-block w-100" src="carusel/dog1.jpg" alt="" ></a>
+                          <a href="ofertas.html"><img class="d-block " src="carusel/dog1.jpg" alt="" width="500px"></a>
                       </div>
                       <div class="carousel-item" data-bs-interval="3000">
                           <a href="ofertas.html"><img class="d-block w-100" src="carusel/dog2.jpg" alt=""></a>
@@ -237,120 +203,120 @@
             <div class="row">
               <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
                 <div class="border text-center bg-opacity-75">
-                  <img src="./Img/Alimento_Perro_adulto.webp">
+                  <img src="./Img/Nuevos_1.jpg">
                   <div class="card-body">
-                    <h5 class="card-title">Champion Dog</h5>
-                    <p class="card-text">Alimento perro adulto Champion Dog carne y pollo 15 ...</p>
+                    <h5 class="card-title">Nutrique Skin Sensitivity Dog</h5>
+                    <p class="card-text">Nutrique Skin Sensitivity Dog para perros adultos...</p>
                     <a href="ventas.html" class="btn btn-primary">ver producto</a>
                   </div>
                 </div>
               </div>
               <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
                 <div class="border text-center bg-opacity-75">
-                  <img src="./Img/Alimento_seco_perro.webp">
+                  <img src="./Img/Nuevos_2.png">
                   <div class="card-body">
-                    <h5 class="card-title">Pedigree</h5>
-                    <p class="card-text">Alimento Seco Perro Adulto Raza Mediana/Grande Carne ...</p>
+                    <h5 class="card-title">Top K9 Set Dispensador Bolsas</h5>
+                    <p class="card-text">Dispensador de Bolsas Top k9, con el dispensador...</p>
                     <a href="#" class="btn btn-primary">ver producto</a>
                   </div>
                 </div>
               </div>
               <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
                 <div class="border text-center bg-opacity-75">
-                  <img src="./Img/Alimento_perro3.webp">
+                  <img src="./Img/Nuevos_3.jpg">
                   <div class="card-body">
-                    <h5 class="card-title">Dog Chow</h5>
-                    <p class="card-text">Alimento Seco Perro Adulto Raza Mediana/Grande Pollo y Pavo Bolsa ...</p>
+                    <h5 class="card-title">Arena Sanitaria TopK9</h5>
+                    <p class="card-text">Bentonita sódica 100% natural con fórmula anti...</p>
                     <a href="#" class="btn btn-primary">ver producto</a>
                   </div>
                 </div>
               </div>
               <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
                 <div class="border text-center bg-opacity-75">
-                  <img src="./Img/Alimento_perro4.webp">
+                  <img src="./Img/Nuevos_4.JPG">
                   <div class="card-body">
-                    <h5 class="card-title">Champion Dog</h5>
-                    <p class="card-text">Alimento perro adulto Champion Dog carne y pollo 15 ...</p>
+                    <h5 class="card-title">Arena TopK9 aglutinante</h5>
+                    <p class="card-text">Gravilla mineral 100% natural con fórmula...</p>
                     <a href="ventas.html" class="btn btn-primary">ver producto</a>
                   </div>
                 </div>
               </div>
               <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
                 <div class="border text-center bg-opacity-75">
-                  <img src="./Img/Alimento_perro5.webp">
+                  <img src="./Img/Nuevos_5.JPG">
                   <div class="card-body">
-                    <h5 class="card-title">Alimento Doko Carne</h5>
-                    <p class="card-text">Alimento perro adulto doko carne y 15 kilos de puro sabor...</p>
+                    <h5 class="card-title">Arenero Catit Pixi</h5>
+                    <p class="card-text">El Arenero Catit PIXI es una caja de arena o sanitaria para gatos...</p>
                     <a href="ventas.html" class="btn btn-primary">ver producto</a>
                   </div>
                 </div>
               </div>
               <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
                 <div class="border text-center bg-opacity-75">
-                  <img src="./Img/Alimento_perro6.webp">
+                  <img src="./Img/Nuevos_6.png">
                   <div class="card-body">
-                    <h5 class="card-title">Master Dog carne</h5>
-                    <p class="card-text">Alimento perro adulto Master Dog  de carne sus 15 kilos de sabor ...</p>
+                    <h5 class="card-title">Bravery Chicken Dog</h5>
+                    <p class="card-text">Para Perros Cachorros. Mono proteico, libre de granos y cereales....</p>
                     <a href="ventas.html" class="btn btn-primary">ver producto</a>
                   </div>
                 </div>
               </div>
               <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
                 <div class="border text-center bg-opacity-75">
-                  <img src="./Img/afeitadora.webp">
+                  <img src="./Img/Nuevos_7.JPG">
                   <div class="card-body">
-                    <h5 class="card-title">Afeitadora de mascotas</h5>
-                    <p class="card-text"> Meten a tu mascota a contenta !cortarle las uñas¡ te lo agradecerá todos los dias ...</p>
+                    <h5 class="card-title">Brit Care Dog Chicken</h5>
+                    <p class="card-text"> Alimento para perros adultos de razas grandes ...</p>
                     <a href="ventas.html" class="btn btn-primary">ver producto</a>
                   </div>
                 </div>
               </div>
               <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
                 <div class="border text-center bg-opacity-75">
-                  <img src="./Img/Anti-Escape.webp">
+                  <img src="./Img/Nuevos_8.JPG">
                   <div class="card-body">
-                    <h5 class="card-title">Anti Escape</h5>
-                    <p class="card-text"> Manten a tu perro segura compralo ya y cuidado de el mismo ...</p>
+                    <h5 class="card-title">Dispensador De Snack</h5>
+                    <p class="card-text"> El Dispensador de Snacks Catit PIXI es un pequeño...</p>
                     <a href="ventas.html" class="btn btn-primary">ver producto</a>
                   </div>
                 </div>
               </div>
               <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
                 <div class="border text-center bg-opacity-75">
-                  <img src="./Img/Arnés.webp">
+                  <img src="./Img/Nuevos_9.png">
                   <div class="card-body">
-                    <h5 class="card-title">Arnés de seguridar</h5>
-                    <p class="card-text">Manten a tu perro segura compralo ya y cuidado de el mismo ...</p>
+                    <h5 class="card-title">Dogoo Mordedor</h5>
+                    <p class="card-text">Snack 100% natural, sin productos químicos, que brinda variadas...</p>
                     <a href="ventas.html" class="btn btn-primary">ver producto</a>
                   </div>
                 </div>
               </div>
               <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
                 <div class="border text-center bg-opacity-75">
-                  <img src="./Img/mesa_perro.webp">
+                  <img src="./Img/Nuevos_10.png">
                   <div class="card-body">
-                    <h5 class="card-title">mesa de perro </h5>
-                    <p class="card-text">Dale toda la comodidad a tu perro que coma como el rey que es ...</p>
+                    <h5 class="card-title">Dogoo Mordedor</h5>
+                    <p class="card-text">Snack 100% natural, sin productos químicos, que brinda variadas...</p>
                     <a href="ventas.html" class="btn btn-primary">ver producto</a>
                   </div>
                 </div>
               </div>
               <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
                 <div class="border text-center bg-opacity-75">
-                  <img src="./Img/Parque.webp">
+                  <img src="./Img/Nuevo_11.jpg">
                   <div class="card-body">
-                    <h5 class="card-title">Parque para perros</h5>
-                    <p class="card-text"> Dale toda la diversión del mundo en un ambiente seguro para el ...</p>
+                    <h5 class="card-title">HOP! Gato Kitten</h5>
+                    <p class="card-text"> Hop! Gato Kitten para gatos en período de crecimiento...</p>
                     <a href="ventas.html" class="btn btn-primary">ver producto</a>
                   </div>
                 </div>
               </div>
               <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
                 <div class="border text-center bg-opacity-75">
-                  <img src="./Img/8pcsJuego.webp">
+                  <img src="./Img/Nuevo_12.png">
                   <div class="card-body">
-                    <h5 class="card-title">pack de estetica</h5>
-                    <p class="card-text">Para darle ese toque que sientes que le falta a tu mascota compralo ya ...</p>
+                    <h5 class="card-title">Hills Dog Vet I/D</h5>
+                    <p class="card-text">Hill’s® Prescription Diet® i/d Digestive Care Low Fat en lata es un alimento...</p>
                     <a href="ventas.html" class="btn btn-primary">ver producto</a>
                   </div>
                 </div>
@@ -531,7 +497,6 @@
       </div>
     </div>
   </footer>
-
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
