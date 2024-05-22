@@ -3,7 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Tienda Mascota</title>
+    <title>Tienda de Mascotas</title>
+    <link rel="icon" href="./logo.jpg">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="./css/main.css">
@@ -11,67 +12,113 @@
     </head>
 <body>
   
-  <div class="fusion-navbar">
-    <p>¡Despachos a todo Chile – Compra y retira!</p>
-  </div>
-
-  <nav class="navbar navbar-expand-xl navbar-dark  ">
-    <div class="container"> 
-        <a class="navbar-brand" href="./index.html">
-            <img class="border25" src="logo.jpg" alt="" height="80">
-        </a>
-        <!-- Botón de hamburguesa -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#menulateral">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-    
-
-    <!-- Menú lateral -->
-        <section class="offcanvas offcanvas-start bg-warning" id="menulateral" tabindex="-1">
-            <div class="offcanvas-header" data-bs-theme="dark">
-                <h5 class="offcanvas-title text-dark">Menu</h5>
-                <button class="btn-close" type="button" aria-label="Close" data-bs-dismiss="offcanvas"></button>
-            </div>    
-            <div class="offcanvas-body">
-                <!-- Formulario de búsqueda -->
-                <form class="d-flex flex-nowrap">
-                    <input class="form-control me-4" type="search" placeholder="Buscar" aria-label="Search" style="width: 400px;">
-                    <button class="btn btn-outline-light" type="submit">Buscar</button>
-                </form>
-                <!-- Lista de navegación -->
-                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                  <li class="nav-item" style="margin-right: 5px;">
-                    <a class="nav-link" href="./index.html">Inicio</a>
-                  </li>
-                  <li class="nav-item ">
-                    <a class="nav-link" href="ofertas.html">Ofertas</a>
-                </li>
-                  <li class="nav-item">
-                    <div>
-                        <button class="btn " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="bi bi-cart-dash"></i> Carrito</button>
-                    </div>
-                </li>
-                  <li class="nav-item">
-                    <div>
-                          <button class="btn " type="button" data-bs-toggle="offcanvas"           
-                          data-bs-target="#offIniciodesecion" aria-controls="offcanvasRight"> <i class="bi bi-person"></i> Iniciar sesión </a> </button>
-                    </div>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link" href="registrarse.html">
-                      <i class="bi">| </i>Registrarse
-                      </a>
-                </li>
-                </ul>
-            </div>
-        </section>
+  <header>
+    <div class="fusion-navbar">
+      <p>¡Despachos a todo Chile – Compra y retira!</p>
     </div>
-  </nav>
-
-  <div class="offcanvas offcanvas-end bg-warning" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+  
+    <nav class="navbar navbar-expand-xl navbar-dark  ">
+      <div class="container"> 
+          <a class="navbar-brand" href="./index.html">
+              <img class="border25" src="logo.jpg" alt="" height="80">
+          </a>
+          <!-- Botón de hamburguesa -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#menulateral">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+      
+  
+      <!-- Menú lateral -->
+          <section class="offcanvas offcanvas-start bg-warning" id="menulateral" tabindex="-1">
+              <div class="offcanvas-header" data-bs-theme="dark">
+                  <h5 class="offcanvas-title text-dark">Menu</h5>
+                  <button class="btn-close" type="button" aria-label="Close" data-bs-dismiss="offcanvas"></button>
+              </div>    
+              <div class="offcanvas-body">
+                  <!-- Formulario de búsqueda -->
+                  <form class="d-flex flex-nowrap">
+                      <input class="form-control me-4" type="search" placeholder="Buscar" aria-label="Search" style="width: 400px;">
+                      <button class="btn btn-outline-light" type="submit">Buscar</button>
+                  </form>
+                  <!-- Lista de navegación -->
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item" style="margin-right: 5px;">
+                      <a class="nav-link" href="./index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item ">
+                      <a class="nav-link" href="ofertas.html">Ofertas</a>
+                  </li>
+                    <li class="nav-item">
+                      <div>
+                          <button class="btn " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="bi bi-cart-dash"></i> Carrito</button>
+                      </div>
+                  </li>
+                    <li class="nav-item">
+                      <div>
+                            <button class="btn " type="button" data-bs-toggle="offcanvas"           
+                            data-bs-target="#offIniciodesecion" aria-controls="offcanvasRight"> <i class="bi bi-person"></i> Iniciar sesión </a> </button>
+                      </div>
+                  </li>
+                  <li class="nav-item dropdown">
+                      <a class="nav-link" href="registrarse.html">
+                        <i class="bi">| </i>Registrarse
+                        </a>
+                  </li>
+                  </ul>
+              </div>
+          </section>
+      </div>
+    </nav>
+  
+    <div class="offcanvas offcanvas-end bg-warning" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+            <h2 class="offcanvas-title" id="offcanvasRightLabel" style="font-family: Geneva, sans-serif;"><strong>Mi carrito de compras</strong>
+            <samp><hr></samp>
+            </h2>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body" style="display: flex; flex-direction: column;  align-items: center;">
+            <p style="font-size: 4em; margin: 0;"><i class="bi bi-info-circle-fill"></i></p>
+            <h4><strong>Tu carrito de compras está vacío</strong></h4>
+            <small class="text-body-secondary"><strong>Parece que aún no has elegido tus productos.</strong></small>
+        </div>
+    </div>
+  
+    <div class="offcanvas offcanvas-end bg-light " tabindex="-1" id="offIniciodesecion" aria-labelledby="offcanvasRightLabel">
+      <div class="offcanvas-header">
+          <h2 class="offcanvas-title" id="offcanvasRightLabel" style="font-family: Geneva, sans-serif;"> <i class="bi bi-person" ></i>
+          <samp><hr></samp>
+          </h2>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body" style="display: flex; flex-direction: column; ">
+        <div class="fomulario">
+          <h1>Inicio de sesion</h1>
+          <form method="post" onsubmit="return false;">
+            <div class="username">
+              <input type="text" id="usuario" required>
+              <label >nombre de usuario</label>
+            </div>
+            <div class="username">
+              <input type="password"  id="clave" required>
+              <label >contraseña</label>
+            </div>
+            <div class="recordar">¿ Olvido la contraseña?</div>
+            <input type="submit" value="Inicio" onclick="loguear()">
+            <div class="registrarse">
+              Quiero hacr el <a href="#">registro</a>
+            </div>
+        </form>
+          
+        </div>
+          
+      </div>
+    </div>
+  
+    <div class="offcanvas offcanvas-end bg-warning" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
       <div class="offcanvas-header">
           <h2 class="offcanvas-title" id="offcanvasRightLabel" style="font-family: Geneva, sans-serif;"><strong>Mi carrito de compras</strong>
-          <samp><hr></samp>
+            <samp><hr></samp>
           </h2>
           <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
       </div>
@@ -80,53 +127,9 @@
           <h4><strong>Tu carrito de compras está vacío</strong></h4>
           <small class="text-body-secondary"><strong>Parece que aún no has elegido tus productos.</strong></small>
       </div>
-      
-  </div>
-
-  <div class="offcanvas offcanvas-end bg-light " tabindex="-1" id="offIniciodesecion" aria-labelledby="offcanvasRightLabel">
-    <div class="offcanvas-header">
-        <h2 class="offcanvas-title" id="offcanvasRightLabel" style="font-family: Geneva, sans-serif;"> <i class="bi bi-person" ></i>
-        <samp><hr></samp>
-        </h2>
-        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
     </div>
-    <div class="offcanvas-body" style="display: flex; flex-direction: column; ">
-      <div class="fomulario">
-        <h1>Inicio de sesion</h1>
-        <form method="post" onsubmit="return false;">
-          <div class="username">
-            <input type="text" id="usuario" required>
-            <label >nombre de usuario</label>
-          </div>
-          <div class="username">
-            <input type="password"  id="clave" required>
-            <label >contraseña</label>
-          </div>
-          <div class="recordar">¿ Olvido la contraseña?</div>
-          <input type="submit" value="Inicio" onclick="loguear()">
-          <div class="registrarse">
-            Quiero hacr el <a href="#">registro</a>
-          </div>
-      </form>
-        
-      </div>
-        
-    </div>
-  </div>
-
-  <div class="offcanvas offcanvas-end bg-warning" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-    <div class="offcanvas-header">
-        <h2 class="offcanvas-title" id="offcanvasRightLabel" style="font-family: Geneva, sans-serif;"><strong>Mi carrito de compras</strong>
-          <samp><hr></samp>
-        </h2>
-        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-    </div>
-    <div class="offcanvas-body" style="display: flex; flex-direction: column;  align-items: center;">
-        <p style="font-size: 4em; margin: 0;"><i class="bi bi-info-circle-fill"></i></p>
-        <h4><strong>Tu carrito de compras está vacío</strong></h4>
-        <small class="text-body-secondary"><strong>Parece que aún no has elegido tus productos.</strong></small>
-    </div>
-  </div>
+  </header>
+  
 
   <div class="container py-4">
     <div id="slider-codersfree" class="carousel slide" data-bs-ride="carousel">
@@ -468,67 +471,57 @@
     </div>
   </div>
   
-  
-  <footer class="bg-primary text-white text-center">
-    <hr>
-    <div class="container-fluid p-4" >
-      <div class="row">
-        
-        <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
-          <h5 class="text-uppercase">Pet Shop</h5>
-          <p class="text-start" style="margin-left: 60px;">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex in magnam nihil id consequuntur unde alias quod veniam reprehenderit ea porro, animi officiis necessitatibus. Placeat quaerat doloremque amet rem nam! consesadasd asdaa
-          </p>
+  <footer class="text-center text-white bg-dark mt-4">
+    <div class="container p-4">
+      <section class="mb-4">
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="bi bi-facebook"></i></a>
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="bi bi-twitter"></i></a>
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="bi bi-instagram"></i></a>
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="bi bi-linkedin"></i></a>
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="bi bi-github"></i></a>
+      </section>
+      <section class="mb-4">
+        <p>
+          Ofrecemos una amplia variedad de productos para el cuidado y bienestar de tu mascota.
+          Síguenos en nuestras redes sociales para estar al tanto de las últimas novedades y ofertas.
+        </p>
+      </section>
+      <section class="">
+        <div class="row">
+          <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Tienda Mascota</h5>
+            <p>
+              Nos dedicamos a ofrecer productos de alta calidad para el cuidado de tu mascota.
+              Visítanos en nuestra tienda física o en línea para encontrar lo mejor para tu amigo peludo.
+            </p>
+          </div>
+          <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Enlaces útiles</h5>
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a href="ofertas.html" class="text-white">Ofertas</a>
+              </li>
+              <li>
+                <a href="ventas_perros.html" class="text-white">Perros</a>
+              </li>
+              <li>
+                <a href="ventana_gato.html" class="text-white">Gatos</a>
+              </li>
+              <li>
+                <a href="ventana_recien_llegados.html" class="text-white">Nuevas Llegadas</a>
+              </li>
+            </ul>
+          </div>
         </div>
-
-        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-          <h5 class="text-uppercase">Links</h5>
-          <ul class="list-unstyled mb-0">
-            <li>
-              <a href="#!" class="text-white">Link 1</a>
-            </li>
-            <li>
-              <a href="#!" class="text-white">Link 2</a>
-            </li>
-            <li>
-              <a href="#!" class="text-white">Link 3</a>
-            </li>
-            <li>
-              <a href="#!" class="text-white">Link 4</a>
-            </li>
-          </ul>
-        </div>
-        
-        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-          <h5 class="text-uppercase mb-0">Links</h5>
-          <ul class="list-unstyled">
-            <li>
-              <a href="#!" class="text-white">Link 1</a>
-            </li>
-            <li>
-              <a href="#!" class="text-white">Link 2</a>
-            </li>
-            <li>
-              <a href="#!" class="text-white">Link 3</a>
-            </li>
-            <li>
-              <a href="#!" class="text-white">Link 4</a>
-            </li>
-          </ul>
-        </div>
-      </div>
+      </section>
     </div>
-
-    
-    <div class="container-fluid bg-dark">
-      <div class="row">
-        <div class="col-md-12 text-center">
-          <p class="text-white">© 2020 Copyright: <a class="text-white" href="./index.html">Pet shop</a></p>
-        </div>
-      </div>
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2024 Tienda Mascota
     </div>
   </footer>
   
+
+  <script src="./js/index.js"></script>
   <script src="./js/login.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
