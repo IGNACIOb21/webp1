@@ -18,8 +18,8 @@
     />
     <title>detalle2</title>
   </head>
-  <body>
-    <div class="container-fluid px-4">
+<body>
+    < class="container-fluid px-4">
       <!-- barrita sobre navbar -->
       <nav class="navbar navbar-expand-lg bg-dark fs-6 py-0">
         <div class="container-fluid">
@@ -246,6 +246,7 @@
         </div>
       </nav>
       <!-- carrito de compra -->
+    <div class="container-cart-products">
       <div
         class="offcanvas offcanvas-end"
         tabindex="-1"
@@ -323,6 +324,8 @@
           </div>
         </div>
       </div>
+    </div>
+      
       <!-- detalle -->
       <section class="py-5">
         <div class="container">
@@ -427,105 +430,110 @@
               </div>
             </aside>
             <main class="col-lg-6">
-              <div class="ps-lg-3">
-                <h4 class="title text-dark">
-                  Alimento Humedo Perro Adulto Sabor Carne Pouch, 100 gr <br />
-                </h4>
-                <div class="d-flex flex-row my-3">
-                  <div class="text-warning mb-1 me-2">
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <span class="ms-1"> 4.0</span>
-                  </div>
-                  <span class="text-muted"
-                    ><i class="fas fa-shopping-basket fa-sm mx-1"></i>14
-                    ordenes</span
-                  >
-                  <span class="text-success ms-2">En existencias</span>
-                </div>
-
-                <div class="mb-3">
-                  <span class="h5">$890</span>
-                </div>
-
-                <p>
-                  La cama para perros "Comfy Paws Deluxe" es un producto diseñado para proporcionar el máximo confort y apoyo a las mascotas.
-                   Disponible en varios tamaños, desde pequeño hasta extra grande, esta cama se adapta a perros de todas las razas y tamaños. 
-                   Fabricada con materiales de alta calidad,
-                   cuenta con una funda removible y lavable, un colchón
-                    de espuma viscoelástica y una base antideslizante para mantenerla en su lugar.
-                </p>
-
-                <div class="row">
-                  <dt class="col-3">RAZA</dt>
-                  <dd class="col-9">mediana/grande</dd>
-
-                  <dt class="col-3">INGREDIENTES</dt>
-                  <dd class="col-9">
-                    ---------------
-                  </dd>
-
-                  <dt class="col-3">INFORMACION NUTRICIONAL</dt>
-
-                  <dd class="col-9">
-                   ---------------------
-                  </dd>
-
-                  <dt class="col-3">RECOMENDACIONES</dt>
-                  <dd class="col-9">
-                  ---------------------
-                  </dd>
-                </div>
-                <hr />
-
-                <div class="row mb-4">
-                  <div class="col-md-4 col-6">
-                    <label class="mb-2">PARA RAZAS:</label>
-                    <select
-                      class="form-select border border-secondary"
-                      style="height: 35px"
+              <div class="product">
+                <div class="ps-lg-3">
+                  <h4 class="title text-dark">
+                    Alimento Humedo Perro Adulto Sabor Carne Pouch, 100 gr <br />
+                  </h4>
+                  <div class="d-flex flex-row my-3">
+                    <div class="text-warning mb-1 me-2">
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <span class="ms-1"> 4.0</span>
+                    </div>
+                    <span class="text-muted"
+                      ><i class="fas fa-shopping-basket fa-sm mx-1"></i>14
+                      ordenes</span
                     >
-                      <option>Todas las razas</option>
-                    </select>
+                    <span class="text-success ms-2">En existencias</span>
                   </div>
-                  <!-- col.// -->
-                  <div class="col-md-4 col-6 mb-3">
-                    <label class="mb-2 d-block">CANTIDAD</label>
-                    <div class="input-group mb-3" style="width: 170px">
-                      <button
-                        class="btn btn-white border border-secondary px-3"
-                        type="button"
-                        id="button-addon1"
-                        data-mdb-ripple-color="dark"
+  
+                  <div class="mb-3">
+                    <span class="h5">$890</span>
+                  </div>
+  
+                  <p>
+                    La cama para perros "Comfy Paws Deluxe" es un producto diseñado para proporcionar el máximo confort y apoyo a las mascotas.
+                    Disponible en varios tamaños, desde pequeño hasta extra grande, esta cama se adapta a perros de todas las razas y tamaños. 
+                    Fabricada con materiales de alta calidad,
+                    cuenta con una funda removible y lavable, un colchón
+                    de espuma viscoelástica y una base antideslizante para mantenerla en su lugar.
+                  </p>
+  
+                  <div class="row">
+                    <dt class="col-3">RAZA</dt>
+                    <dd class="col-9">mediana/grande</dd>
+  
+                    <dt class="col-3">INGREDIENTES</dt>
+                    <dd class="col-9">
+                      ---------------
+                    </dd>
+  
+                    <dt class="col-3">INFORMACION NUTRICIONAL</dt>
+  
+                    <dd class="col-9">
+                    ---------------------
+                    </dd>
+  
+                    <dt class="col-3">RECOMENDACIONES</dt>
+                    <dd class="col-9">
+                    ---------------------
+                    </dd>
+                  </div>
+                  <hr />
+  
+                  <div class="row mb-4">
+                    <div class="col-md-4 col-6">
+                      <label class="mb-2">PARA RAZAS:</label>
+                      <select
+                        class="form-select border border-secondary"
+                        style="height: 35px"
                       >
-                        <i class="fas fa-minus"></i>
-                      </button>
-                      <input
-                        type="text"
-                        class="form-control text-center border border-secondary"
-                        placeholder="1"
-                        aria-label="Example text with button addon"
-                        aria-describedby="button-addon1"
-                      />
-                      <button
-                        class="btn btn-white border border-secondary px-3"
-                        type="button"
-                        id="button-addon2"
-                        data-mdb-ripple-color="dark"
-                      >
-                        <i class="fas fa-plus"></i>
-                      </button>
+                        <option>Todas las razas</option>
+                      </select>
+                    </div>
+                    <!-- col.// -->
+                    <div class="col-md-4 col-6 mb-3">
+                      <label class="mb-2 d-block">CANTIDAD</label>
+                      <div class="input-group mb-3" style="width: 170px">
+                        <button
+                          class="btn btn-white border border-secondary px-3"
+                          type="button"
+                          id="button-addon1"
+                          data-mdb-ripple-color="dark"
+                        >
+                          <i class="fas fa-minus"></i>
+                        </button>
+                        <input
+                          type="text"
+                          class="form-control text-center border border-secondary"
+                          placeholder="1"
+                          aria-label="Example text with button addon"
+                          aria-describedby="button-addon1"
+                        />
+                        <button
+                          class="btn btn-white border border-secondary px-3"
+                          type="button"
+                          id="button-addon2"
+                          data-mdb-ripple-color="dark"
+                        >
+                          <i class="fas fa-plus"></i>
+                        </button>
+                      </div>
                     </div>
                   </div>
+                  <a href="#" class="btn btn-success shadow-0"> Comprar ahora </a>
+                  <a href="#" class="btn btn-primary shadow-0">
+                    <i id="btn-add-cart" class="me-1 fa fa-shopping-basket"></i> Agregar al carrito
+                  </a>
                 </div>
-                <a href="#" class="btn btn-success shadow-0"> Comprar ahora </a>
-                <a href="#" class="btn btn-primary shadow-0">
-                  <i class="me-1 fa fa-shopping-basket"></i> Agregar al carrito
-                </a>
+
+
               </div>
             </main>
+
           </div>
         </div>
       </section>
@@ -739,10 +747,13 @@
         </ul>
       </footer>
     </div>
+
+    <script src="./js/index.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
-  </body>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</body>
 </html>

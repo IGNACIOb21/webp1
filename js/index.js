@@ -59,4 +59,3 @@ function nextAction(leftPosition, trackWidth, listWidth, carruselWidth, track) {
         track.style.left = `${-1 * (leftPosition + carruselWidth)}px`;
     }
 }
-
