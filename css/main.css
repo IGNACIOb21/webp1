@@ -113,29 +113,5 @@ body {
 }
 
 
--- CSS Variables --
-
-.sidebar {
-    background-color: #e5c05ca2;
-    padding: 1rem;
-}
-.sidebar h4 {
-    font-size: 1.25rem;
-    font-weight: bold;
-}
-.sidebar .btn-toggle {
-    width: 100%;
-    text-align: left;
-}
-.sidebar a {
-    color: #000;
-    text-decoration: none;
-}
-.sidebar a:hover {
-    text-decoration: underline;
-}
-.content {
-    padding: 2rem;
-}
 
 
