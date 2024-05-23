@@ -1,5 +1,4 @@
 
-
 window.onload = function() {
     var modal = document.getElementById("modal");
     var closeButton = document.getElementById("close-button");
