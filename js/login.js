@@ -1,3 +1,5 @@
+// ADMIN = admin Pass = 1234
+
 $(document).ready(function() {
     $("h2.texto.container").click(function() {
         window.location.href = "bienvebida.html";
