@@ -39,9 +39,11 @@ body {
 .navbar {
     background-color:	#e5c15c; 
 }
-.btn{
+
+/*.btn{
     color: black;
 }
+*/
 
 .navbar-nav .nav-link {
     color: #000000; 

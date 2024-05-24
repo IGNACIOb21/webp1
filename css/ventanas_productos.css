@@ -1,0 +1,13 @@
+body {
+    overflow-x: hidden; 
+}
+.navbar {
+    width: 100%; 
+}
+.container-xl {
+    max-width: 100%;
+}
+.position-absolute.top-0.start-1000.translate-middle {
+    left: 100%;
+    transform: translate(-50%, -50%);
+}
