@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Tienda de Mascotas</title>
     <link rel="icon" href="./logo.jpg">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/letra.css">
@@ -57,11 +57,6 @@
                             <button class="btn " type="button" data-bs-toggle="offcanvas"           
                             data-bs-target="#offIniciodesecion" aria-controls="offcanvasRight"> <i class="bi bi-person"></i> Iniciar sesión </a> </button>
                       </div>
-                  </li>
-                  <li class="nav-item dropdown">
-                      <a class="nav-link" href="registrarse.html">
-                        <i class="bi">| </i>Registrarse
-                        </a>
                   </li>
                   <li class="nav-item">
                     <div class="container-icon">
@@ -137,7 +132,7 @@
             <div class="recordar">¿Olvido la contraseña?</div>
             <input type="submit" value="Inicio" onclick="loguear()">
             <div class="registrarse">
-              Quiero hacr el <a href="#">registro</a>
+              Crear cuenta en <a href="/registrarse.html">registro</a>
             </div>
         </form>
         </div>    
@@ -197,7 +192,7 @@
   <div id="modal" class="modal">
     <div class="modal-content">
         <div class="carousel">
-            <h2>Ofertas del dia <span class="close-button" id="close-button">&times;</span></h2>
+            <h3>Ofertas del dia %<span class="close-button" id="close-button">&times;</span></h3>
             <div class="carrusel-list" id="carrusel-list">
                 <button class="carrusel-arrow carrusel-prev" id="button-prev" data-button="button-prev"
                     onclick="app.processingButton(event)">
@@ -214,7 +209,6 @@
                     <div class="carrusel">
                         <div>
                             <a href="/">
-                                <h4><small>imagen</small> Mas </h4>
                                 <picture>
                                     <img src="carusel/carrusel2/ima1.avif" alt="imagen">
                                     
@@ -226,7 +220,6 @@
                     <div class="carrusel">
                         <div>
                             <a href="/">
-                                <h4><small>imagen</small> Mas </h4>
                                 <picture>
                                     <img src="carusel/carrusel2/ima2.jpg" alt="imagen">
                                 </picture>
@@ -237,7 +230,6 @@
                     <div class="carrusel">
                         <div>
                             <a href="/">
-                                <h4><small>imagen</small> Mas </h4>
                                 <picture>
                                     <img src="carusel/carrusel2/ima3.jpg" alt="imagen">
                                 </picture>
@@ -248,7 +240,6 @@
                     <div class="carrusel">
                         <div>
                             <a href="/">
-                                <h4><small>imagen</small> Mas </h4>
                                 <picture>
                                     <img src="carusel/carrusel2/ima4.jpg" alt="imagen">
                                     
@@ -260,7 +251,6 @@
                     <div class="carrusel">
                         <div>
                             <a href="/">
-                                <h4><small>imagen</small> Mas </h4>
                                 <picture>
                                     <img src="carusel/carrusel2/ima5.jpg" alt="imagen">
                                     
@@ -272,7 +262,6 @@
                     <div class="carrusel">
                         <div>
                             <a href="/">
-                                <h4><small>imagen</small> Mas </h4>
                                 <picture>
                                     <img src="carusel/carrusel2/ima6.avif" alt="imagen">
                                     
@@ -295,9 +284,8 @@
                 </button>
             </div>
         </div>
-
-    </div>
-</div>
+      </div>
+  </div>
     
   <div class="container">
     <div class="row">
@@ -359,64 +347,61 @@
     </h2>
   </div>
 
-
   <div class="container-items">
-    <div class="item">
-      <div class="container">
-        <div class="row">
-          <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
-            <div class="border text-center bg-opacity-75">
-              <img src="./Img/Alimento_Perro_adulto.webp">
-              <div class="card-body">
-                <div class="info-product">
-                  <h5 data-title="Nombre del producto"class="card-title">Champion Dog</h5>
-                  <h6 class="card-text">Alimento perro adulto Champion Dog carne y pollo 15 ...</h6>
-                  <p class="price">$80</p>
-                  <a href="ventas.html" class="btn btn-primary">ver producto</a>
-                  <button class="btn-add-cart">Añadir al carrito</button>
-                </div>        
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
-            <div class="border text-center bg-opacity-75">
-              <img src="./Img/Alimento_seco_perro.webp">
-              <div class="card-body">
-                <h5 class="card-title">Pedigree</h5>
-                <hh6 class="card-text">Alimento Seco Perro Adulto Raza Mediana/Grande Carne ...</hh6>
-                <p class="price">$50</p>
-                <a href="ventas.html" class="btn btn-primary">ver producto</a>
-                <button class="btn-add-cart">Añadir al carrito</button>
-              </div>
-            </div>
-          </div>
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
-          <div class="border text-center bg-opacity-75">
-            <img src="./Img/Alimento_perro3.webp">
-            <div class="card-body">
-              <h5 class="card-title">Dog Chow</h5>
-              <h6 class="card-text">Alimento Seco Perro Adulto Raza Mediana/Grande Pollo y Pavo Bolsa ...</h6>
-              <p class="price">$30</p>
-              <a href="ventas.html" class="btn btn-primary">ver producto</a>
-              <button class="btn-add-cart">Añadir al carrito</button>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-sm-6 col-md-4 col-lg-2 mb-3">
+          <div class="card text-center bg-opacity-75 h-100">
+            <img class="card-img-top" src="./Img/Alimento_Perro_adulto.webp" alt="Nutrique Skin Sensitivity Dog">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Champion Dog</h5>
+              <h6 class="card-text">Alimento perro adulto Champion Dog carne y pollo 15 ...</h6>
+              <p class="price mt-auto">$80</p>
+              <a href="ventas.html" class="btn btn-primary mb-2">Ver producto</a>
+              <button class="btn btn-primary btn-add-cart" style="background-color: green; border-color: green;">Añadir al carrito</button>
             </div>
           </div>
         </div>
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
-            <div class="border text-center bg-opacity-75">
-              <img src="./Img/Alimento_perro4.webp">
-              <div class="card-body">
-                <h5 class="card-title">Fit Formula Adulto 20 KG</h5>
-                <h6 class="card-text">Fit Formula Senior, ha sido especialmente ...</h6>
-                <p class="price">$20</p>
-                <a href="ventas.html" class="btn btn-primary">ver producto</a>
-                <button class="btn-add-cart">Añadir al carrito</button>
-              </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-2 mb-3">
+          <div class="card text-center bg-opacity-75 h-100">
+            <img class="card-img-top" src="./Img/Alimento_seco_perro.webp" alt="Nutrique Skin Sensitivity Dog">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Pedigree</h5>
+              <h6 class="card-text">Alimento Seco Perro Adulto Raza Mediana/Grande Carne ...</h6>
+              <p class="price mt-auto">$50</p>
+              <a href="ventas.html" class="btn btn-primary mb-2">Ver producto</a>
+              <button class="btn btn-primary btn-add-cart" style="background-color: green; border-color: green;">Añadir al carrito</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-2 mb-3">
+          <div class="card text-center bg-opacity-75 h-100">
+            <img class="card-img-top" src="./Img/Alimento_perro3.webp" alt="Nutrique Skin Sensitivity Dog">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Dog Chow</h5>
+              <h6 class="card-text">Alimento Seco Perro Adulto Raza Mediana/Grande Pollo y Pavo Bolsa ...</h6>
+              <p class="price mt-auto">$30</p>
+              <a href="ventas.html" class="btn btn-primary mb-2">Ver producto</a>
+              <button class="btn btn-primary btn-add-cart" style="background-color: green; border-color: green;">Añadir al carrito</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-2 mb-3">
+          <div class="card text-center bg-opacity-75 h-100">
+            <img class="card-img-top" src="./Img/Alimento_perro4.webp" alt="Nutrique Skin Sensitivity Dog">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Fit Formula Adulto 20 KG</h5>
+              <h6 class="card-text">Fit Formula Senior, ha sido especialmente ...</h6>
+              <p class="price mt-auto">$20</p>
+              <a href="ventas.html" class="btn btn-primary mb-2">Ver producto</a>
+              <button class="btn btn-primary btn-add-cart" style="background-color: green; border-color: green;">Añadir al carrito</button>
             </div>
           </div>
         </div>
       </div>
-    
+    </div>
+  
+  
 
   <div class="container py-4">
     <div class="mx-auto" style="max-width: 1540px;">
@@ -429,51 +414,51 @@
 
   <div class="container">
     <div class="row">
-      <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
-        <div class="border text-center bg-opacity-75">
-          <img src="./Img/Gato1.webp">
-          <div class="card-body">
+      <div class="col-12 col-sm-6 col-md-4 col-lg-2 mb-3">
+        <div class="card text-center bg-opacity-75 h-100">
+          <img class="card-img-top" src="./Img/Gato1.webp" alt="Nutrique Skin Sensitivity Dog">
+          <div class="card-body d-flex flex-column">
             <h5 class="card-title">Cat Chow Adulto</h5>
-            <h6 class="card-text">Defense Plus®, una combinación exclusiva de prebiótico natural, antioxidantes ...</h6> 
-            <p class="price">$10</p>
-            <a href="gatos/ventaGato1.html" class="btn btn-primary">ver producto</a>
-            <button class="btn-add-cart">Añadir al carrito</button>
+            <h6 class="card-text">Defense Plus®, una combinación exclusiva de prebiótico natural, antioxidantes ...</h6>
+            <p class="price mt-auto">$10</p>
+            <a href="ventas.html" class="btn btn-primary mb-2">Ver producto</a>
+            <button class="btn btn-primary btn-add-cart" style="background-color: green; border-color: green;">Añadir al carrito</button>
           </div>
         </div>
       </div>
-      <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
-        <div class="border text-center bg-opacity-75">
-          <img src="./Img/Gato2.webp">
-          <div class="card-body">
+      <div class="col-12 col-sm-6 col-md-4 col-lg-2 mb-3">
+        <div class="card text-center bg-opacity-75 h-100">
+          <img class="card-img-top" src="./Img/Gato2.webp" alt="Nutrique Skin Sensitivity Dog">
+          <div class="card-body d-flex flex-column">
             <h5 class="card-title">Nomade Gato Adulto</h5>
             <h6 class="card-text">Nómade es un alimento para gatos adultos, desarrollado por expertos en nut...</h6>
-            <p class="price">$70</p>
-            <a href="gatos/ventaGato1.html" class="btn btn-primary">ver producto</a>
-            <button class="btn-add-cart">Añadir al carrito</button>
+            <p class="price mt-auto">$70</p>
+            <a href="ventas.html" class="btn btn-primary mb-2">Ver producto</a>
+            <button class="btn btn-primary btn-add-cart" style="background-color: green; border-color: green;">Añadir al carrito</button>
           </div>
         </div>
       </div>
-      <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
-        <div class="border text-center bg-opacity-75">
-          <img src="./Img/Gato3.webp">
-          <div class="card-body">
+      <div class="col-12 col-sm-6 col-md-4 col-lg-2 mb-3">
+        <div class="card text-center bg-opacity-75 h-100">
+          <img class="card-img-top" src="./Img/Gato3.webp" alt="Nutrique Skin Sensitivity Dog">
+          <div class="card-body d-flex flex-column">
             <h5 class="card-title">Masko Cat</h5>
             <h6 class="card-text">Formula que contienen ingredientes balanceados y altamente digestibles, par.....</h6>
-            <p class="price">$90</p>
-            <a href="gatos/ventaGato1.html" class="btn btn-primary">ver producto</a>
-            <button class="btn-add-cart">Añadir al carrito</button>
+            <p class="price mt-auto">$90</p>
+            <a href="ventas.html" class="btn btn-primary mb-2">Ver producto</a>
+            <button class="btn btn-primary btn-add-cart" style="background-color: green; border-color: green;">Añadir al carrito</button>
           </div>
         </div>
       </div>
-      <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
-        <div class="border text-center bg-opacity-75">
-          <img src="./Img/Gato4.webp">
-          <div class="card-body">
+      <div class="col-12 col-sm-6 col-md-4 col-lg-2 mb-3">
+        <div class="card text-center bg-opacity-75 h-100">
+          <img class="card-img-top" src="./Img/Gato4.webp" alt="Nutrique Skin Sensitivity Dog">
+          <div class="card-body d-flex flex-column">
             <h5 class="card-title">Lite Cat Buffet</h5>
-            <h6 class="card-text">Porque los gatos disfrutan los diferentes aromas, los mejor que ofrece lo mejor para los gatoh6</h6>
-            <p class="price">$50</p>
-            <a href="gatos/ventaGato1.html" class="btn btn-primary">ver producto</a>
-            <button class="btn-add-cart">Añadir al carrito</button>
+            <h6 class="card-text">Porque los gatos disfrutan los diferentes aromas, los mejor que ofrece lo mejor para los gato</h6>
+            <p class="price mt-auto">$50</p>
+            <a href="ventas.html" class="btn btn-primary mb-2">Ver producto</a>
+            <button class="btn btn-primary btn-add-cart" style="background-color: green; border-color: green;">Añadir al carrito</button>
           </div>
         </div>
       </div>
@@ -492,154 +477,152 @@
   <div class="container">
     <div class="row">
       <div class="col-12 col-sm-6 col-md-4 col-lg-2 mb-3">
-        <div class="border text-center bg-opacity-75">
-          <img src="./Img/Nuevos_1.jpg">
-          <div class="card-body">
+        <div class="card text-center bg-opacity-75 h-100">
+          <img class="card-img-top" src="./Img/Nuevos_1.jpg" alt="Nutrique Skin Sensitivity Dog">
+          <div class="card-body d-flex flex-column">
             <h5 class="card-title">Nutrique Skin Sensitivity Dog</h5>
             <h6 class="card-text">Nutrique Skin Sensitivity Dog para perros adultos...</h6>
-            <p class="price">$50</p>
-            <a href="ventas.html" class="btn btn-primary">ver producto</a>
-            <button class="btn-add-cart">Añadir al carrito</button>
+            <p class="price mt-auto">$50</p>
+            <a href="ventas.html" class="btn btn-primary mb-2">Ver producto</a>
+            <button class="btn btn-primary btn-add-cart" style="background-color: green; border-color: green;">Añadir al carrito</button>
           </div>
         </div>
       </div>
       <div class="col-12 col-sm-6 col-md-4 col-lg-2 mb-3">
-        <div class="border text-center bg-opacity-75">
-          <img src="./Img/Nuevos_2.png">
-          <div class="card-body">
+        <div class="card text-center bg-opacity-75 h-100">
+          <img class="card-img-top" src="./Img/Nuevos_2.png" alt="Top K9 Set Dispensador Bolsas">
+          <div class="card-body d-flex flex-column">
             <h5 class="card-title">Top K9 Set Dispensador Bolsas</h5>
             <h6 class="card-text">Dispensador de Bolsas Top k9, con el dispensador.</h6>
-            <p class="price">$40</p>
-            <a href="ventas.html" class="btn btn-primary">ver producto</a>
-            <button class="btn-add-cart">Añadir al carrito</button>
+            <p class="price mt-auto">$40</p>
+            <a href="ventas.html" class="btn btn-primary mb-2">Ver producto</a>
+            <button class="btn btn-primary btn-add-cart" style="background-color: green; border-color: green;">Añadir al carrito</button>
           </div>
         </div>
       </div>
       <div class="col-12 col-sm-6 col-md-4 col-lg-2 mb-3">
-        <div class="border text-center bg-opacity-75">
-          <img src="./Img/Nuevos_3.jpg">
-          <div class="card-body">
+        <div class="card text-center bg-opacity-75 h-100">
+          <img class="card-img-top" src="./Img/Nuevos_3.jpg" alt="Arena Sanitaria TopK9">
+          <div class="card-body d-flex flex-column">
             <h5 class="card-title">Arena Sanitaria TopK9</h5>
             <h6 class="card-text">Bentonita sódica 100% natural con fórmula anti...</h6>
-            <p class="price">$60</p>
-            <a href="ventas.html" class="btn btn-primary">ver producto</a>
-            <button class="btn-add-cart">Añadir al carrito</button>
+            <p class="price mt-auto">$60</p>
+            <a href="ventas.html" class="btn btn-primary mb-2">Ver producto</a>
+            <button class="btn btn-primary btn-add-cart" style="background-color: green; border-color: green;">Añadir al carrito</button>
           </div>
         </div>
       </div>
       <div class="col-12 col-sm-6 col-md-4 col-lg-2 mb-3">
-        <div class="border text-center bg-opacity-75">
-          <img src="./Img/Nuevos_4.JPG">
-          <div class="card-body">
+        <div class="card text-center bg-opacity-75 h-100">
+          <img class="card-img-top" src="./Img/Nuevos_4.jpg" alt="Top K9 Set Dispensador Bolsas">
+          <div class="card-body d-flex flex-column">
             <h5 class="card-title">Arena TopK9 aglutinante</h5>
             <h6 class="card-text">Gravilla mineral 100% natural con fórmula...</h6>
-            <p class="price">$40</p>
-            <a href="ventas.html" class="btn btn-primary">ver producto</a>
-            <button class="btn-add-cart">Añadir al carrito</button>
+            <p class="price mt-auto">$40</p>
+            <a href="ventas.html" class="btn btn-primary mb-2">Ver producto</a>
+            <button class="btn btn-primary btn-add-cart" style="background-color: green; border-color: green;">Añadir al carrito</button>
           </div>
         </div>
       </div>
       <div class="col-12 col-sm-6 col-md-4 col-lg-2 mb-3">
-        <div class="border text-center bg-opacity-75">
-          <img src="./Img/Nuevos_5.JPG">
-          <div class="card-body">
+        <div class="card text-center bg-opacity-75 h-100">
+          <img class="card-img-top" src="./Img/Nuevos_5.JPG" alt="Top K9 Set Dispensador Bolsas">
+          <div class="card-body d-flex flex-column">
             <h5 class="card-title">Arenero Catit Pixi</h5>
             <h6 class="card-text">El Arenero Catit PIXI es una caja de arena o sanitaria para gatos...</h6>
-            <p class="price">$70</p>
-            <a href="ventas.html" class="btn btn-primary">ver producto</a>
-            <button class="btn-add-cart">Añadir al carrito</button>
+            <p class="price mt-auto">$70</p>
+            <a href="ventas.html" class="btn btn-primary mb-2">Ver producto</a>
+            <button class="btn btn-primary btn-add-cart" style="background-color: green; border-color: green;">Añadir al carrito</button>
           </div>
         </div>
       </div>
       <div class="col-12 col-sm-6 col-md-4 col-lg-2 mb-3">
-        <div class="border text-center bg-opacity-75">
-          <img src="./Img/Nuevos_6.png">
-          <div class="card-body">
+        <div class="card text-center bg-opacity-75 h-100">
+          <img class="card-img-top" src="./Img/Nuevos_6.png" alt="Top K9 Set Dispensador Bolsas">
+          <div class="card-body d-flex flex-column">
             <h5 class="card-title">Bravery Chicken Dog</h5>
             <h6 class="card-text">Para Perros Cachorros. Mono proteico, libre de granos y cereales....</h6>
-            <p class="price">$60</p>
-            <a href="ventas.html" class="btn btn-primary">ver producto</a>
-            <button class="btn-add-cart">Añadir al carrito</button>
+            <p class="price mt-auto">$60</p>
+            <a href="ventas.html" class="btn btn-primary mb-2">Ver producto</a>
+            <button class="btn btn-primary btn-add-cart" style="background-color: green; border-color: green;">Añadir al carrito</button>
           </div>
         </div>
       </div>
       <div class="col-12 col-sm-6 col-md-4 col-lg-2 mb-3">
-        <div class="border text-center bg-opacity-75">
-          <img src="./Img/Nuevos_7.JPG">
-          <div class="card-body">
+        <div class="card text-center bg-opacity-75 h-100">
+          <img class="card-img-top" src="./Img/Nuevos_7.jpg" alt="Top K9 Set Dispensador Bolsas">
+          <div class="card-body d-flex flex-column">
             <h5 class="card-title">Brit Care Dog Chicken</h5>
             <h6 class="card-text">Alimento para perros adultos de razas grandes.</h6>
-            <p class="price">$50</p>
-            <a href="ventas.html" class="btn btn-primary">ver producto</a>
-            <button class="btn-add-cart">Añadir al carrito</button>
+            <p class="price mt-auto">$50</p>
+            <a href="ventas.html" class="btn btn-primary mb-2">Ver producto</a>
+            <button class="btn btn-primary btn-add-cart" style="background-color: green; border-color: green;">Añadir al carrito</button>
           </div>
         </div>
       </div>
       <div class="col-12 col-sm-6 col-md-4 col-lg-2 mb-3">
-        <div class="border text-center bg-opacity-75">
-          <img src="./Img/Nuevos_8.JPG">
-          <div class="card-body">
+        <div class="card text-center bg-opacity-75 h-100">
+          <img class="card-img-top" src="./Img/Nuevos_8.JPG" alt="Top K9 Set Dispensador Bolsas">
+          <div class="card-body d-flex flex-column">
             <h5 class="card-title">Dispensador De Snack</h5>
             <h6 class="card-text">El Dispensador de Snacks Catit PIXI es un pequeño...</h6>
-            <p class="price">$30</p>
-            <a href="ventas.html" class="btn btn-primary">ver producto</a>
-            <button class="btn-add-cart">Añadir al carrito</button>
+            <p class="price mt-auto">$30</p>
+            <a href="ventas.html" class="btn btn-primary mb-2">Ver producto</a>
+            <button class="btn btn-primary btn-add-cart" style="background-color: green; border-color: green;">Añadir al carrito</button>
           </div>
         </div>
       </div>
       <div class="col-12 col-sm-6 col-md-4 col-lg-2 mb-3">
-        <div class="border text-center bg-opacity-75">
-          <img src="./Img/Nuevos_9.png">
-          <div class="card-body">
+        <div class="card text-center bg-opacity-75 h-100">
+          <img class="card-img-top" src="./Img/Nuevos_9.png" alt="Top K9 Set Dispensador Bolsas">
+          <div class="card-body d-flex flex-column">
             <h5 class="card-title">Dogoo Mordedor</h5>
             <h6 class="card-text">Snack 100% natural, sin productos químicos, que brinda variadas...</h6>
-            <p class="price">$60</p>
-            <a href="ventas.html" class="btn btn-primary">ver producto</a>
-            <button class="btn-add-cart">Añadir al carrito</button>
+            <p class="price mt-auto">$60</p>
+            <a href="ventas.html" class="btn btn-primary mb-2">Ver producto</a>
+            <button class="btn btn-primary btn-add-cart" style="background-color: green; border-color: green;">Añadir al carrito</button>
           </div>
         </div>
       </div>
       <div class="col-12 col-sm-6 col-md-4 col-lg-2 mb-3">
-        <div class="border text-center bg-opacity-75">
-          <img src="./Img/Nuevos_10.png">
-          <div class="card-body">
+        <div class="card text-center bg-opacity-75 h-100">
+          <img class="card-img-top" src="./Img/Nuevos_10.png" alt="Top K9 Set Dispensador Bolsas">
+          <div class="card-body d-flex flex-column">
             <h5 class="card-title">Dogoo Mordedor</h5>
             <h6 class="card-text">Snack 100% natural, sin productos químicos, que brinda variadas...</h6>
-            <p class="price">$20</p>
-            <a href="ventas.html" class="btn btn-primary">ver producto</a>
-            <button class="btn-add-cart">Añadir al carrito</button>
+            <p class="price mt-auto">$20</p>
+            <a href="ventas.html" class="btn btn-primary mb-2">Ver producto</a>
+            <button class="btn btn-primary btn-add-cart" style="background-color: green; border-color: green;">Añadir al carrito</button>
           </div>
         </div>
       </div>
       <div class="col-12 col-sm-6 col-md-4 col-lg-2 mb-3">
-        <div class="border text-center bg-opacity-75">
-          <img src="./Img/Nuevo_11.jpg">
-          <div class="card-body">
+        <div class="card text-center bg-opacity-75 h-100">
+          <img class="card-img-top" src="./Img/Nuevo_11.jpg" alt="Top K9 Set Dispensador Bolsas">
+          <div class="card-body d-flex flex-column">
             <h5 class="card-title">HOP! Gato Kitten</h5>
             <h6 class="card-text">Hop! Gato Kitten para gatos en período de crecimiento...</h6>
-            <p class="price">$50</p>
-            <a href="ventas.html" class="btn btn-primary">ver producto</a>
-            <button class="btn-add-cart">Añadir al carrito</button>
+            <p class="price mt-auto">$50</p>
+            <a href="ventas.html" class="btn btn-primary mb-2">Ver producto</a>
+            <button class="btn btn-primary btn-add-cart" style="background-color: green; border-color: green;">Añadir al carrito</button>
           </div>
         </div>
       </div>
       <div class="col-12 col-sm-6 col-md-4 col-lg-2 mb-3">
-        <div class="border text-center bg-opacity-75">
-          <img src="./Img/Nuevo_12.png">
-          <div class="card-body">
+        <div class="card text-center bg-opacity-75 h-100">
+          <img class="card-img-top" src="./Img/Nuevo_12.png" alt="Top K9 Set Dispensador Bolsas">
+          <div class="card-body d-flex flex-column">
             <h5 class="card-title">Hills Dog Vet I/D</h5>
             <h6 class="card-text">Hill’s® Prescription Diet® i/d Digestive Care Low Fat en lata es un alimento...</h6>
-            <p class="price">$20</p>
-            <a href="ventas.html" class="btn btn-primary">ver producto</a>
-            <button class="btn-add-cart">Añadir al carrito</button>
+            <p class="price mt-auto">$20</p>
+            <a href="ventas.html" class="btn btn-primary mb-2">Ver producto</a>
+            <button class="btn btn-primary btn-add-cart" style="background-color: green; border-color: green;">Añadir al carrito</button>
           </div>
         </div>
       </div>
     </div>
   </div>
   </div>
-  </div>
-
 
   <footer class="text-center text-white bg-dark mt-4">
     <div class="container p-4" style="margin-top: 200px;">

@@ -1,7 +1,7 @@
 
 
 .modal-content {
-    background-color: #970000;
+    background-color: #f6f6f6;
     border-radius: 15px;
     margin: 15% auto;
     padding: 20px;
@@ -26,20 +26,6 @@
 }
 
 
-
-
-
-
-
-h4, h2, h1,small, a {
-    margin: 0;
-    padding: 0;
-}
-
-a {
-    text-decoration: none;
-}
-
 .carousel {
     margin: 0px 0px;
 }
@@ -50,16 +36,7 @@ a {
     }
 }
 
-.carousel h2 {
-    font-size: 35px;
-    line-height: 38px;
-    padding-bottom: 50px;
-    opacity: .9;
-    text-transform: uppercase;
-    font-weight: 600;
-    text-align: center;
-    color: #000000;
-}
+
 
 .carrusel-list {
     position: relative;
@@ -92,21 +69,6 @@ a {
     height: 100%;
 }
 
-.carrusel h4 {
-    position: absolute;
-    z-index: 1;
-    font-size: 22px;
-    line-height: 23px;
-    color: #000000;
-    text-align: right;
-    padding: 15px;
-    margin-left: 60%;
-}
-
-.carrusel h4 small {
-    font-size: 15px;
-    display: block;
-}
 
 .carrusel a img {
     object-fit: cover;
