@@ -1,0 +1,139 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/letra.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/vent_entrada.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/carrusel.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/prueba.css' %}">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="fusion-navbar">
+          <p>¡Despachos a todo Chile – Compra y retira!</p>
+        </div>
+      
+        <nav class="navbar navbar-expand-xl navbar-dark">
+          <div class="container"> 
+              <a class="navbar-brand" href="./index.html">
+                  <img class="border25" src="logo.jpg" alt="" height="80">
+              </a>
+              <!-- Botón de hamburguesa -->
+              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#menulateral">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+          
+      
+          <!-- Menú lateral -->
+              <section class="offcanvas offcanvas-start bg-warning" id="menulateral" tabindex="-1">
+                  <div class="offcanvas-header" data-bs-theme="dark">
+                      <h5 class="offcanvas-title text-dark">Menu</h5>
+                      <button class="btn-close" type="button" aria-label="Close" data-bs-dismiss="offcanvas"></button>
+                  </div>    
+                  <div class="offcanvas-body">
+                      <!-- Formulario de búsqueda -->
+                      <form class="d-flex flex-nowrap">
+                          <input class="form-control me-4" type="search" placeholder="Buscar" aria-label="Search" style="width: 400px;">
+                          <button class="btn btn-outline-light" type="submit">Buscar</button>
+                      </form>
+                      <!-- Lista de navegación -->
+                      <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item" style="margin-right: 5px;">
+                          <a class="nav-link" href="./index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item ">
+                          <a class="nav-link" href="ofertas.html">Ofertas</a>
+                      </li>
+                        <li class="nav-item">
+                          <div>
+                                <button class="btn " type="button" data-bs-toggle="offcanvas"           
+                                data-bs-target="#offIniciodesecion" aria-controls="offcanvasRight"> <i class="bi bi-person"></i> Iniciar sesión </a> </button>
+                          </div>
+                      </li>
+                      <li class="nav-item">
+                        <div class="container-icon">
+                          <div class="container-cart-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-shopping-cart" width="36" height="36" viewBox="0 0 24 24" stroke-width="1" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                              <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                              <path d="M6 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+                              <path d="M17 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+                              <path d="M17 17h-11v-14h-2" />
+                              <path d="M6 5l14 1l-1 7h-13" />
+                            </svg>
+                            <div class="count-products">
+                              <span id="contador-productos">0</span>
+                            </div>
+                          </div>
+    
+                          <div class="container-cart-products hidden-cart" style="z-index: 1000; width: 600px ;">
+                            <div class="row-product">
+                              <div class="cart-product">
+                                <div class="info-cart-product">
+                                  <span class="cantidad-producto-carrito">0</span>
+                                  <p class="titulo-producto-carrito">Sin nombre</p>
+                                  <span class="precio-producto-carrito">$0</span>
+                                </div>
+                                <svg
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  fill="none"
+                                  viewBox="0 0 24 24"
+                                  stroke-width="1.5"
+                                  stroke="currentColor"
+                                  class="icon-close"
+                                >
+                                  <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    d="M6 18L18 6M6 6l12 12"
+                                  />
+                                </svg>
+                              </div>
+                            </div>
+                            <div class="cart-total">
+                                <h3>Total:</h3>
+                                <span class="total-pagar">$0</span>
+                            </div>
+                          </div>
+                        </div>
+                    </li>
+                      </ul>
+                  </div>
+              </section>
+          </div>
+        </nav>
+    
+        <div class="offcanvas offcanvas-end bg-light " tabindex="-1" id="offIniciodesecion" aria-labelledby="offcanvasRightLabel">
+          <div class="offcanvas-header">
+              <h2 class="offcanvas-title" id="offcanvasRightLabel" style="font-family: Geneva, sans-serif;"> <i class="bi bi-person" ></i>
+              <samp><hr></samp>
+              </h2>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body" style="display: flex; flex-direction: column; ">
+            <div class="fomulario">
+              <h1>Inicio de sesion</h1>
+              <form method="post" onsubmit="return false;">
+                <div class="username">
+                  <input type="text" id="usuario" required>
+                  <label >nombre de usuario</label>
+                </div>
+                <div class="username">
+                  <input type="password"  id="clave" required>
+                  <label >contraseña</label>
+                </div>
+                <div class="recordar">¿Olvido la contraseña?</div>
+                <input type="submit" value="Inicio" onclick="loguear()">
+                <div class="registrarse">
+                  Crear cuenta en <a href="/registrarse.html">registro</a>
+                </div>
+            </form>
+            </div>    
+          </div>
+        </div>
+      </header>
+</body>
+</html>
