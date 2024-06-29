@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Tienda Mascota</title>
-    <link rel="icon" href="./logo.jpg">
+    <link rel="icon" href="{% static 'Img/logo.jpg' %}">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
@@ -133,7 +133,6 @@
             </div>
         </div> 
           <div class="col-lg-9 order-lg-12">
-            <div class="container"></div>
             <div class="container-fluid py-4 ">
               <div id="slider-codersfree1" class="carousel slide" data-bs-ride="carousel">
                   <div class="carousel-indicators">
@@ -148,28 +147,28 @@
                   </div>
                   <div class="carousel-inner carousel-fade ">
                       <div class="carousel-item active carousel-dark" data-bs-interval="3000">
-                          <a href="ofertas.html"><img class="d-block w-100" src="carusel/dog1.jpg" alt="" ></a>
+                          <a href="{% url 'ofertas'%}"><img class="d-block w-100" src="{% static 'Img/carusel/dog1.jpg' %}" alt="" ></a>
                       </div>
                       <div class="carousel-item" data-bs-interval="3000">
-                          <a href="ofertas.html"><img class="d-block w-100" src="carusel/dog2.jpg" alt=""></a>
+                          <a href="{% url 'ofertas'%}"><img class="d-block w-100" src="{% static 'Img/carusel/dog2.jpg' %}" alt=""></a>
                       </div>
                       <div class="carousel-item" data-bs-interval="3000">
-                          <a href="ofertas.html"><img class="d-block w-100" src="carusel/dog3.jpg" alt=""></a>
+                          <a href="{% url 'ofertas'%}"><img class="d-block w-100" src="{% static 'Img/carusel/dog3.jpg' %}" alt=""></a>
                       </div>
                       <div class="carousel-item" data-bs-interval="3000">
-                          <a href="ofertas.html"><img class="d-block w-100" src="carusel/dog4.jpg" alt=""></a>
+                          <a href="{% url 'ofertas'%}"><img class="d-block w-100" src="{% static 'Img/carusel/dog4.jpg' %}" alt=""></a>
                       </div>
                       <div class="carousel-item" data-bs-interval="3000">
-                          <a href="ofertas.html"><img class="d-block w-100" src="carusel/dog5.jpg" alt=""></a>
+                          <a href="{% url 'ofertas'%}"><img class="d-block w-100" src="{% static 'Img/carusel/dog5.jpg' %}" alt=""></a>
                       </div>
                       <div class="carousel-item" data-bs-interval="3000">
-                          <a href="ofertas.html"><img class="d-block w-100" src="carusel/dog6.jpg" alt=""></a>
+                          <a href="{% url 'ofertas'%}"><img class="d-block w-100" src="{% static 'Img/carusel/dog6.jpg' %}" alt=""></a>
                       </div>
                       <div class="carousel-item" data-bs-interval="3000">
-                          <a href="ofertas.html"><img class="d-block w-100" src="carusel/dog7.jpg" alt=""></a>
+                          <a href="{% url 'ofertas'%}"><img class="d-block w-100" src="{% static 'Img/carusel/dog7.jpg' %}" alt=""></a>
                       </div>
                       <div class="carousel-item" data-bs-interval="3000">
-                          <a href="ofertas.html"><img class="d-block w-100" src="carusel/dog8.jpg" alt=""></a>
+                          <a href="{% url 'ofertas'%}"><img class="d-block w-100" src="{% static 'Img/carusel/dog8.jpg' %}" alt=""></a>
                       </div>
                   </div>
                   <button class="carousel-control-prev" data-bs-target="#slider-codersfree1" data-bs-slide="prev">
@@ -185,7 +184,7 @@
             <div class="row">
               <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
                 <div class="border text-center bg-opacity-75">
-                  <img src="./Img/Alimento_Perro_adulto.webp">
+                  <img src="{% static 'Img/Alimento_Perro_adulto.webp' %}">
                   <div class="card-body">
                     <h5 class="card-title">Champion Dog</h5>
                     <p class="card-text">Alimento perro adulto Champion Dog carne y pollo 15 ...</p>
@@ -195,7 +194,7 @@
               </div>
               <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
                 <div class="border text-center bg-opacity-75">
-                  <img src="./Img/Alimento_seco_perro.webp">
+                  <img src="{% static 'Img/Alimento_seco_perro.webp' %}">
                   <div class="card-body">
                     <h5 class="card-title">Pedigree</h5>
                     <p class="card-text">Alimento Seco Perro Adulto Raza Mediana/Grande Carne ...</p>
@@ -205,7 +204,7 @@
               </div>
               <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
                 <div class="border text-center bg-opacity-75">
-                  <img src="./Img/Alimento_perro3.webp">
+                  <img src="{% static 'Img/Alimento_perro3.webp' %}">
                   <div class="card-body">
                     <h5 class="card-title">Dog Chow</h5>
                     <p class="card-text">Alimento Seco Perro Adulto Raza Mediana/Grande Pollo y Pavo Bolsa ...</p>
@@ -215,7 +214,7 @@
               </div>
               <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
                 <div class="border text-center bg-opacity-75">
-                  <img src="./Img/Alimento_perro4.webp">
+                  <img src="{% static 'Img/Alimento_perro4.webp' %}">
                   <div class="card-body">
                     <h5 class="card-title">Champion Dog</h5>
                     <p class="card-text">Alimento perro adulto Champion Dog carne y pollo 15 ...</p>
@@ -225,7 +224,7 @@
               </div>
               <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
                 <div class="border text-center bg-opacity-75">
-                  <img src="./Img/Alimento_perro5.webp">
+                  <img src="{% static 'Img/Alimento_perro5.webp' %}">
                   <div class="card-body">
                     <h5 class="card-title">Alimento Doko Carne</h5>
                     <p class="card-text">Alimento perro adulto doko carne y 15 kilos de puro sabor...</p>
@@ -235,7 +234,7 @@
               </div>
               <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
                 <div class="border text-center bg-opacity-75">
-                  <img src="./Img/Alimento_perro6.webp">
+                  <img src="{% static 'Img/Alimento_perro6.webp' %}">
                   <div class="card-body">
                     <h5 class="card-title">Master Dog carne</h5>
                     <p class="card-text">Alimento perro adulto Master Dog  de carne sus 15 kilos de sabor ...</p>
@@ -245,7 +244,7 @@
               </div>
               <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
                 <div class="border text-center bg-opacity-75">
-                  <img src="./Img/afeitadora.webp">
+                  <img src="{% static 'Img/afeitadora.webp' %}">
                   <div class="card-body">
                     <h5 class="card-title">Afeitadora de mascotas</h5>
                     <p class="card-text"> Manten a tu mascota a contenta !cortarle las uñas¡ te lo agradecerá todos los dias ...</p>
@@ -255,7 +254,7 @@
               </div>
               <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
                 <div class="border text-center bg-opacity-75">
-                  <img src="./Img/Anti-Escape.webp">
+                  <img src="{% static 'Img/Anti-Escape.webp' %}">
                   <div class="card-body">
                     <h5 class="card-title">Anti Escape</h5>
                     <p class="card-text"> Manten a tu perro segura compralo ya y cuidado de el mismo ...</p>
@@ -265,7 +264,7 @@
               </div>
               <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
                 <div class="border text-center bg-opacity-75">
-                  <img src="./Img/Arnés.webp">
+                  <img src="{% static 'Img/Arnés.webp' %}">
                   <div class="card-body">
                     <h5 class="card-title">Arnés de seguridar</h5>
                     <p class="card-text">Manten a tu perro segura compralo ya y cuidado de el mismo ...</p>
@@ -275,7 +274,7 @@
               </div>
               <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
                 <div class="border text-center bg-opacity-75">
-                  <img src="./Img/mesa_perro.webp">
+                  <img src="{% static 'Img/mesa_perro.webp' %}">
                   <div class="card-body">
                     <h5 class="card-title">mesa de perro </h5>
                     <p class="card-text">Dale toda la comodidad a tu perro que coma como el rey que es ...</p>
@@ -285,7 +284,7 @@
               </div>
               <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
                 <div class="border text-center bg-opacity-75">
-                  <img src="./Img/Parque.webp">
+                  <img src="{% static 'Img/Parque.webp' %}">
                   <div class="card-body">
                     <h5 class="card-title">Parque para perros</h5>
                     <p class="card-text"> Dale toda la diversión del mundo en un ambiente seguro para el ...</p>
@@ -295,7 +294,7 @@
               </div>
               <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
                 <div class="border text-center bg-opacity-75">
-                  <img src="./Img/8pcsJuego.webp">
+                  <img src="{% static 'Img/8pcsJuego.webp' %}">
                   <div class="card-body">
                     <h5 class="card-title">pack de estetica</h5>
                     <p class="card-text">Para darle ese toque que sientes que le falta a tu mascota compralo ya ...</p>
@@ -305,7 +304,7 @@
               </div>
               <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
                 <div class="border text-center bg-opacity-75">
-                  <img src="./Img/Chubasquero.webp">
+                  <img src="{% static 'Img/Chubasquero.webp' %}">
                   <div class="card-body">
                     <h5 class="card-title">Chubasquero</h5>
                     <p class="card-text">Dale a tu mascota en esos dias lluviosos la protección nesesarias ...</p>
@@ -315,7 +314,7 @@
               </div>
               <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
                 <div class="border text-center bg-opacity-75">
-                  <img src="./Img/Inodoro.webp">
+                  <img src="{% static 'Img/Inodoro.webp' %}">
                   <div class="card-body">
                     <h5 class="card-title">Inodoro</h5>
                     <p class="card-text">Para evitar que que tu mascota haga sus necesidades en donde quiran ...</p>
@@ -325,7 +324,7 @@
               </div>
               <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
                 <div class="border text-center bg-opacity-75">
-                  <img src="./Img/lindo.webp">
+                  <img src="{% static 'Img/lindo.webp' %}">
                   <div class="card-body">
                     <h5 class="card-title">Champion Dog</h5>
                     <p class="card-text">Alimento perro adulto Champion Dog carne y pollo 15 ...</p>
@@ -335,7 +334,7 @@
               </div>
               <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
                 <div class="border text-center bg-opacity-75">
-                  <img src="./Img/SequeRápidamente.webp">
+                  <img src="{% static 'Img/SequeRápidamente.webp' %}">
                   <div class="card-body">
                     <h5 class="card-title">Champion Dog</h5>
                     <p class="card-text">Alimento perro adulto Champion Dog carne y pollo 15 ...</p>
@@ -345,7 +344,7 @@
               </div>
               <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
                 <div class="border text-center bg-opacity-75">
-                  <img src="./Img/Tapete.webp">
+                  <img src="{% static 'Img/Tapete.webp' %}">
                   <div class="card-body">
                     <h5 class="card-title">Champion Dog</h5>
                     <p class="card-text">Alimento perro adulto Champion Dog carne y pollo 15 ...</p>
@@ -355,7 +354,7 @@
               </div>
               <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
                 <div class="border text-center bg-opacity-75">
-                  <img src="./Img/Tazón.webp">
+                  <img src="{% static 'Img/Tazón.webp' %}">
                   <div class="card-body">
                     <h5 class="card-title">Champion Dog</h5>
                     <p class="card-text">Alimento perro adulto Champion Dog carne y pollo 15 ...</p>
@@ -365,7 +364,7 @@
               </div>
               <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
                 <div class="border text-center bg-opacity-75">
-                  <img src="./Img/Peluca_De_León.webp">
+                  <img src="{% static 'Img/Peluca_De_León.webp' %}">
                   <div class="card-body">
                     <h5 class="card-title">Champion Dog</h5>
                     <p class="card-text">Alimento perro adulto Champion Dog carne y pollo 15 ...</p>
@@ -375,7 +374,7 @@
               </div>
               <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
                 <div class="border text-center bg-opacity-75">
-                  <img src="./Img/CamaGrande.webp">
+                  <img src="{% static 'Img/CamaGrande.webp' %}">
                   <div class="card-body">
                     <h5 class="card-title">Champion Dog</h5>
                     <p class="card-text">Alimento perro adulto Champion Dog carne y pollo 15 ...</p>
@@ -385,7 +384,7 @@
               </div>
               <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
                 <div class="border text-center bg-opacity-75">
-                  <img src="./Img/mesaa1.webp">
+                  <img src="{% static 'Img/mesaa1.webp' %}">
                   <div class="card-body">
                     <h5 class="card-title">Champion Dog</h5>
                     <p class="card-text">Alimento perro adulto Champion Dog carne y pollo 15 ...</p>
@@ -395,7 +394,7 @@
               </div>
               <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
                 <div class="border text-center bg-opacity-75">
-                  <img src="./Img/mesaa2.webp">
+                  <img src="{% static 'Img/mesaa2.webp' %}">
                   <div class="card-body">
                     <h5 class="card-title">Champion Dog</h5>
                     <p class="card-text">Alimento perro adulto Champion Dog carne y pollo 15 ...</p>
@@ -405,7 +404,7 @@
               </div>
               <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
                 <div class="border text-center bg-opacity-75">
-                  <img src="./Img/jugetea1.webp">
+                  <img src="{% static 'Img/jugetea1.webp' %}">
                   <div class="card-body">
                     <h5 class="card-title">Champion Dog</h5>
                     <p class="card-text">Alimento perro adulto Champion Dog carne y pollo 15 ...</p>

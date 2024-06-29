@@ -10,7 +10,7 @@ urlpatterns = [
 
     path('ventana_gato/', views.ventana_gato, name='ventana_gato'),
     path('ventana_recien_llegados/', views.ventana_recien_llegados, name='ventana_recien_llegados'),
-    path('ventana_recien_llegados/', views.ventana_recien_llegados, name='ventana_recien_llegados'),
+    path('ventas_perros/', views.ventas_perros, name='ventas_perros'),
 
 
     path('ventaGato1/', views.ventaGato1, name='ventaGato1'),
@@ -37,4 +37,26 @@ urlpatterns = [
     path('ventaGato22/', views.ventaGato22, name='ventaGato22'),
     path('ventaGato23/', views.ventaGato23, name='ventaGato23'),
 
+
+    path('ventas.perro1/', views.ventasperro1, name='ventas.perro1'),
+    path('ventas.perro2/', views.ventasperro2, name='ventas.perro2'),
+    path('ventas.perro3/', views.ventasperro3, name='ventas.perro3'),
+    path('ventas.perro4/', views.ventasperro4, name='ventas.perro4'),
+    path('ventas.perro5/', views.ventasperro5, name='ventas.perro5'),
+    path('ventas.perro6/', views.ventasperro6, name='ventas.perro6'),
+    path('ventas.perro7/', views.ventasperro7, name='ventas.perro7'),
+
+   
+    path('recien_llegados2/', views.recien_llegados2, name='recien_llegados2'),
+    path('recien_llegados3/', views.recien_llegados3, name='recien_llegados3'),
+    path('recien_llegados4/', views.recien_llegados4, name='recien_llegados4'),
+    path('recien_llegados5/', views.recien_llegados5, name='recien_llegados5'),
+    path('recien_llegados6/', views.recien_llegados6, name='recien_llegados6'),
+    path('recien_llegados7/', views.recien_llegados7, name='recien_llegados7'),
+    path('recien_llegados8/', views.recien_llegados8, name='recien_llegados8'),
+    path('recien_llegados9/', views.recien_llegados9, name='recien_llegados9'),
+    path('recien_llegados10/', views.recien_llegados10, name='recien_llegados10'),
+    path('recien_llegados11/', views.recien_llegados11, name='recien_llegados11'),
+    path('recien_llegados12/', views.recien_llegados12, name='recien_llegados12'),
+    path('recien_llegados13/', views.recien_llegados13, name='recien_llegados13'),
 ]
