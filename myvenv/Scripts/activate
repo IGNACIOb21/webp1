@@ -42,7 +42,7 @@ if [ "${OSTYPE:-}" = "cygwin" ] || [ "${OSTYPE:-}" = "msys" ] ; then
     export VIRTUAL_ENV=$(cygpath "C:\Users\sebas\Documents\webp1\myvenv")
 else
     # use the path as-is
-    export VIRTUAL_ENV="C:\Users\sebas\Documents\webp1\myvenv"
+    export VIRTUAL_ENV="$PWD"
 fi
 
 _OLD_VIRTUAL_PATH="$PATH"
