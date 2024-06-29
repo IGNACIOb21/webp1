@@ -35,8 +35,11 @@ def ventas_perros(request):
     context = {}
     return render(request, 'ventanas/ventas_perros.html', context)
 
+<<<<<<< HEAD
 
 #Ventanas de productos Perros
+=======
+>>>>>>> b32bbc2669d0d2329b9aa12731193b3bfab2af7e
 
 def ventas_perro1(request):
     context = {}
@@ -68,6 +71,10 @@ def ventas_perro7(request):
 
 #Ventanas de productos gatos
 
+<<<<<<< HEAD
+=======
+#Ventanas de compras gatos
+>>>>>>> b32bbc2669d0d2329b9aa12731193b3bfab2af7e
 def ventaGato1(request):
     context = {}
     return render(request, 'gatos/ventaGato1.html', context)
@@ -140,6 +147,37 @@ def ventaGato23(request):
 
 #Ventanas de productos recien llegados
 
+<<<<<<< HEAD
+=======
+
+#Ventanas de compras de perros
+def ventasperro1(request):
+    context = {}
+    return render(request, 'perros/ventas.perro1.html', context)
+def ventasperro2(request):
+    context = {}
+    return render(request, 'perros/ventas.perro2.html', context)
+def ventasperro3(request):
+    context = {}
+    return render(request, 'perros/ventas.perro3.html', context)
+def ventasperro4(request):
+    context = {}
+    return render(request, 'perros/ventas.perro4.html', context)
+def ventasperro5(request):
+    context = {}
+    return render(request, 'perros/ventas.perro5.html', context)
+def ventasperro6(request):
+    context = {}
+    return render(request, 'perros/ventas.perro6.html', context)
+def ventasperro7(request):
+    context = {}
+    return render(request, 'perros/ventas.perro7.html', context)
+
+
+
+
+#Ventanas de compras  de productos nuevos
+>>>>>>> b32bbc2669d0d2329b9aa12731193b3bfab2af7e
 def recien_llegados2(request):
     context = {}
     return render(request, 'recien_llegados/recien_llegados2.html', context)
@@ -174,8 +212,12 @@ def recien_llegados9(request):
 
 def recien_llegados10(request):
     context = {}
+<<<<<<< HEAD
     return render(request, 'recien_llegados/recien_llegados10.html', context)
 
+=======
+    return render(request, 'recien-llegados/recien_llegados10.html', context)
+>>>>>>> b32bbc2669d0d2329b9aa12731193b3bfab2af7e
 def recien_llegados11(request):
     context = {}
     return render(request, 'recien_llegados/recien_llegados11.html', context)
@@ -186,4 +228,8 @@ def recien_llegados12(request):
 
 def recien_llegados13(request):
     context = {}
+<<<<<<< HEAD
     return render(request, 'recien_llegados/recien_llegados13.html', context)
+=======
+    return render(request, 'recien-llegados/recien_llegados13.html', context)
+>>>>>>> b32bbc2669d0d2329b9aa12731193b3bfab2af7e
