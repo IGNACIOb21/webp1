@@ -38,7 +38,7 @@ urlpatterns = [
     path('ventaGato23/', views.ventaGato23, name='ventaGato23'),
 
 
-    path('ventas_perro1/', views.ventasperro1, name='ventas_perro1'),
+    path('ventas_perro1/', views.ventas_perro1, name='ventas_perro1'),
     path('ventas_perro2/', views.ventasperro2, name='ventas_perro2'),
     path('ventas_perro3/', views.ventasperro3, name='ventas_perro3'),
     path('ventas_perro4/', views.ventasperro4, name='ventas_perro4'),
