@@ -22,8 +22,8 @@
     
     <nav class="navbar navbar-expand-xl navbar-dark">
         <div class="container"> 
-            <a class="navbar-brand" href="./index.html">
-                <img class="border25" src="logo.jpg" alt="" height="80">
+            <a class="navbar-brand" href="{% url 'index'%}">
+                <img class="border25" src="{% static 'Img/logo.jpg'%}" alt="" height="80">
             </a>
             <!-- Botón de hamburguesa -->
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#menulateral">
@@ -46,10 +46,7 @@
                     <!-- Lista de navegación -->
                     <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                     <li class="nav-item" style="margin-right: 5px;">
-                        <a class="nav-link" href="./index.html">Inicio</a>
-                    </li>
-                    <li class="nav-item ">
-                        <a class="nav-link" href="ofertas.html">Ofertas</a>
+                        <a class="nav-link"  href="{% url 'index'%}">Inicio</a>
                     </li>
                     <li class="nav-item">
                         <div>
@@ -148,7 +145,7 @@
                 <div class="card text-dark mb-3" style="background-color: #e9ebbf; max-width: 1600px;">
                     <div class="row g-0">
                     <div class="col-md-4">
-                        <img src="oferta/dog1.jpg" class="img-fluid rounded-start" alt="250" style="max-width: 100%; max-height: 1000px; width: auto; height: auto;">
+                        <img  class="d-block w-100"  src="{% static 'Img/oferta/dog1.jpg' %}" >
                     </div>
                     <div class="col-md-8">
                         <div class="card-body">
@@ -176,7 +173,7 @@
                             </div>
                         </div>
                     <div class="col-md-4">
-                        <img src="oferta/dog2.jpg" class="img-fluid rounded-start" alt="250" style="max-width: 100%; max-height: 1000px; width: auto; height: auto;">
+                        <img  class="d-block w-100"  src="{% static 'Img/oferta/dog1.jpg' %}" >
                     </div> 
                     </div>
                 </div>
@@ -184,7 +181,7 @@
                 <div class="card text-dark mb-3" style="background-color: #e9ebbf;max-width: 1600px;">
                     <div class="row g-0">
                     <div class="col-md-4">
-                        <img src="oferta/dog3.jpg" class="img-fluid rounded-start" alt="250" style="max-width: 100%; max-height: 1000px; width: auto; height: auto;">
+                        <img  class="d-block w-100"  src="{% static 'Img/oferta/dog3.jpg' %}" >
                     </div>
                     <div class="col-md-8">
                         <div class="card-body">
@@ -213,7 +210,7 @@
                             </div>
                         </div>
                     <div class="col-md-4">
-                        <img src="oferta/dog4.jpg" class="img-fluid rounded-start" alt="250" style="max-width: 100%; max-height: 1000px; width: auto; height: auto;">
+                        <img  class="d-block w-100"  src="{% static 'Img/oferta/dog4.jpg' %}" >
                     </div> 
                     </div>
                 </div>
@@ -221,7 +218,7 @@
                 <div class="card  text-dark mb-3" style="background-color: #e9ebbf;max-width: 1600px;">
                     <div class="row g-0">
                     <div class="col-md-4">
-                        <img src="oferta/dog5.jpg" class="img-fluid rounded-start" alt="250" style="max-width: 100%; max-height: 1000px; width: auto; height: auto;">
+                        <img  class="d-block w-100"  src="{% static 'Img/oferta/dog5.jpg' %}" >
                     </div>
                     <div class="col-md-8">
                         <div class="card-body">
@@ -250,14 +247,14 @@
                             </div>
                         </div>
                     <div class="col-md-4">
-                        <img src="oferta/dog6.jpg" class="img-fluid rounded-start" alt="230" style="max-width: 100%; max-height: 1000px; width: auto; height: auto;">
+                        <img  class="d-block w-100"  src="{% static 'Img/oferta/dog6.jpg' %}" >
                     </div> 
                     </div>
                 </div>
                 <div class="card  text-dark mb-3" style="background-color: #e9ebbf;max-width: 1600px;">
                     <div class="row g-0">
                     <div class="col-md-4">
-                        <img src="oferta/dog7.jpg" class="img-fluid rounded-start" alt="250" style="max-width: 100%; max-height: 1000px; width: auto; height: auto;">
+                        <img  class="d-block w-100"  src="{% static 'Img/oferta/dog7.jpg' %}" >
                     </div>
                     <div class="col-md-8">
                         <div class="card-body">
@@ -286,7 +283,7 @@
                             </div>
                         </div>
                     <div class="col-md-4">
-                        <img src="oferta/dog8.jpg" class="img-fluid rounded-start" alt="250" style="max-width: 100%; max-height: 1000px; width: auto; height: auto;">
+                        <img  class="d-block w-100"  src="{% static 'Img/oferta/dog8.jpg' %}" >
                     </div> 
                     </div>
                 </div>
@@ -295,6 +292,6 @@
     </div>
         
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <script src="./js/login.js"></script>
+    <script src="{% static 'js/login.js'%}"></script>
 </body>
 </html>
