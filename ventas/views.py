@@ -33,10 +33,13 @@ def ventas_perros(request):
     context = {}
     return render(request, 'ventanas/ventas_perros.html', context)
 
+<<<<<<< Updated upstream
 
 
 
 #Ventanas de compras gatos
+=======
+>>>>>>> Stashed changes
 def ventaGato1(request):
     context = {}
     return render(request, 'gatos/ventaGato1.html', context)
@@ -130,8 +133,11 @@ def ventaGato23(request):
     return render(request, 'gatos/ventaGato23.html', context)
 
 
+<<<<<<< Updated upstream
 
 #Ventanas de compras de perros
+=======
+>>>>>>> Stashed changes
 def ventasperro1(request):
     context = {}
     return render(request, 'perros/ventas.perro1.html', context)
@@ -155,8 +161,11 @@ def ventasperro7(request):
     return render(request, 'perros/ventas.perro7.html', context)
 
 
+<<<<<<< Updated upstream
 
 #Ventanas de compras  de productos nuevos
+=======
+>>>>>>> Stashed changes
 def recien_llegados2(request):
     context = {}
     return render(request, 'recien-llegados/recien_llegados2.html', context)
@@ -183,6 +192,7 @@ def recien_llegados9(request):
     return render(request, 'recien-llegados/recien_llegados9.html', context)
 def recien_llegados10(request):
     context = {}
+<<<<<<< Updated upstream
     return render(request, 'recien-llegados/recien_llegados10.html', context)
 def recien_llegados11(request):
     context = {}
@@ -193,3 +203,15 @@ def recien_llegados12(request):
 def recien_llegados13(request):
     context = {}
     return render(request, 'recien-llegados/recien_llegados13.html', context)
+=======
+    return render(request, 'gatos/ventaGato10.html', context)
+def recien_llegados11(request):
+    context = {}
+    return render(request, 'gatos/ventaGato11.html', context)
+def recien_llegados12(request):
+    context = {}
+    return render(request, 'gatos/ventaGato12.html', context)
+def recien_llegados13(request):
+    context = {}
+    return render(request, 'gatos/ventaGato13.html', context)
+>>>>>>> Stashed changes
