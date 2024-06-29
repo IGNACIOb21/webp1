@@ -34,8 +34,8 @@
     
       <nav class="navbar navbar-expand-xl navbar-dark  ">
         <div class="container"> 
-            <a class="navbar-brand" href="/index.html">
-                <img class="border25" src="/logo.jpg" alt="" height="80">
+            <a class="navbar-brand" href="{% url 'index'%}">
+                <img class="border25" src="{% static 'Img/logo.jpg'%}" alt="" height="80">
             </a>
             <!-- Botón de hamburguesa -->
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#menulateral">
@@ -58,10 +58,10 @@
                     <!-- Lista de navegación -->
                     <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                       <li class="nav-item" style="margin-right: 5px;">
-                        <a class="nav-link" href="/index.html">Inicio</a>
+                        <a class="nav-link"  href="{% url 'index'%}">Inicio</a>
                       </li>
                       <li class="nav-item ">
-                        <a class="nav-link" href="/ofertas.html">Ofertas</a>
+                        <a class="nav-link"  href="{% url 'ofertas'%}">Ofertas</a>
                     </li>
                       <li class="nav-item">
                         <div>
@@ -70,7 +70,7 @@
                         </div>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link" href="/registrarse.html">
+                        <a class="nav-link" href="{% url 'registrarse'%}">
                           <i class="bi">| </i>Registrarse
                           </a>
                     </li>
@@ -129,8 +129,8 @@
             </section>
         </div>
       </nav>
-       <!-- segundo navbar -->
-       <nav class="navbar navbar-expand-lg " style="background-color: rgba(197, 151, 0, 0.233);">
+      <!-- segundo navbar -->
+      <nav class="navbar navbar-expand-lg " style="background-color: rgba(197, 151, 0, 0.233);">
         <div class="container-fluid">
           <div class="collapse navbar-collapse" id="navbarOfertas">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -161,7 +161,7 @@
                 </a>
                 <ul class="dropdown-menu">
                   <li>
-                    <a class="dropdown-item mb-1" href="ofertas.html">
+                    <a class="dropdown-item mb-1"  href="{% url 'ofertas'%}">
                       <i class="fa-solid fa-lightbulb me-1 text-warning"></i>Mas
                       vendido</a
                     >
@@ -219,9 +219,9 @@
               <div class="mb-3" style="max-width: 540px">
                 <div class="row g-0">
                   <div class="col-md-5">
-                    <img
-                      src="/Img/Gato1.webp"
-                      class="img-fluid rounded-start"
+                    <img 
+                      src="{% static 'Img/Gato2.webp'%}"
+                      class="d-block w-100"
                       alt="..."
                     />
                   </div>
@@ -284,15 +284,15 @@
                   data-fslightbox="mygalley"
                   class="rounded-4"
                   target="_blank"
-                  data-type="image"
-                  href="/Img/Gato2.webp"
+                  data-type="image" 
+                  href="{% static 'Img/Gato2.webp'%}"
                   class="rounded mx-auto d-block"
                   alt="..."
                 >
                   <img
                     style="max-width: 100%; height: 350px; margin: auto"
                     class="rounded-4 fit"
-                    src="/Img/Gato2.webp"
+                    src="{% static 'Img/Gato2.webp'%}"
                     class="rounded mx-auto d-block"
                     alt="..."
                   />
@@ -304,7 +304,7 @@
                   class="border mx-1 rounded-2"
                   target="_blank"
                   data-type="image"
-                  href="/Img/Gato2.webp"
+                  href="{% static 'Img/Gato2.webp'%}"
                   class="rounded mx-auto d-block"
                   alt="..."
                   class="item-thumb"
@@ -313,7 +313,7 @@
                     width="60"
                     height="60"
                     class="rounded-2"
-                    src="/Img/Gato2.webp"
+                    src="{% static 'Img/Gato2.webp'%}"
                     class="rounded mx-auto d-block"
                     alt="..."
                   />
@@ -323,7 +323,7 @@
                   class="border mx-1 rounded-2"
                   target="_blank"
                   data-type="image"
-                  href="/Img/Gato2.webp"
+                  href="{% static 'Img/Gato2.webp'%}"
                   class="rounded mx-auto d-block"
                   alt="..."
                   class="item-thumb"
@@ -332,7 +332,7 @@
                     width="60"
                     height="60"
                     class="rounded-2"
-                    src="/Img/Gato2.webp"
+                    src="{% static 'Img/Gato2.webp'%}"
                     class="rounded mx-auto d-block"
                     alt="..."
                   />
@@ -342,7 +342,7 @@
                   class="border mx-1 rounded-2"
                   target="_blank"
                   data-type="image"
-                  href="/Img/Gato2.webp"
+                  href="{% static 'Img/Gato2.webp'%}"
                   class="rounded mx-auto d-block"
                   alt="..."
                   class="item-thumb"
@@ -351,7 +351,7 @@
                     width="60"
                     height="60"
                     class="rounded-2"
-                    src="/Img/Gato2.webp"
+                    src="{% static 'Img/Gato2.webp'%}"
                     class="rounded mx-auto d-block"
                     alt="..."
                   />
@@ -361,7 +361,7 @@
                   class="border mx-1 rounded-2"
                   target="_blank"
                   data-type="image"
-                  href="/Img/Gato2.webp"
+                  href="{% static 'Img/Gato2.webp'%}"
                   class="rounded mx-auto d-block"
                   alt="..."
                   class="item-thumb"
@@ -370,7 +370,7 @@
                     width="60"
                     height="60"
                     class="rounded-2"
-                    src="/Img/Gato2.webp"
+                    src="{% static 'Img/Gato2.webp'%}"
                     class="rounded mx-auto d-block"
                     alt="..."
                   />
@@ -381,14 +381,15 @@
             <main class="col-lg-6">
               <div class="ps-lg-3">
                 <h4 class="title text-dark">
-                  Alimento Humedo Gato Adulto Sabor nomade, 3 kgr <br />
+                  Alimento Humedo Gato Adulto Sabor Cat Chow, 1 kgr <br />
                 </h4>
                 <div class="d-flex flex-row my-3">
                   <div class="text-warning mb-1 me-2">
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
-                    <span class="ms-1"> 3.0</span>
+                    <i class="fa fa-star"></i>
+                    <span class="ms-1"> 4.0</span>
                   </div>
                   <span class="text-muted"
                     ><i class="fas fa-shopping-basket fa-sm mx-1"></i>7
@@ -402,12 +403,11 @@
                 </div>
 
                 <p>
-                  Descubre el alimento perfecto para tu felino amigo con Cat Chow. Nuestra amplia 
-                  gama de productos ofrece opciones para cada etapa de la vida de tu gato, desde 
-                  gatitos hasta adultos y más allá. Con fórmulas especializadas como Cat Chow Gatitos 
-                  para el crecimiento saludable y Cat Chow Esterilizados para el cuidado específico,
-                  puedes estar seguro de que estás proporcionando una nutrición equilibrada y deliciosa. 
-                  ¡Haz feliz a tu gato con Cat Chow hoy mismo!
+                  Cat Chow es un alimento para gatos que ofrece una nutrición completa y equilibrada. 
+                  Disponible en formulaciones para todas las etapas de vida, desde gatitos hasta adultos mayores, 
+                  se adapta a sus necesidades específicas. Con ingredientes de alta calidad, proporciona proteínas 
+                  esenciales, vitaminas y minerales para una salud óptima. Su sabor delicioso y croqueta crujiente 
+                  aseguran que tu gato disfrute cada comida, manteniendo su sistema inmunológico fuerte y su pelaje saludable.
                 </p>
 
                 <div class="row">
@@ -426,11 +426,11 @@
                     Información Nutricional (porción de 100 g de alimento):
                     Proteína Cruda: 30%
                     Grasa Cruda: 10%
-                   
+                    Fibra Cruda: 3%
                     
                   </dd>
 
-                  <dt class="col-3">RECOMENDACIONES </dt>
+                  <dt class="col-3">RECOMENDACIONES</dt>
                   <dd class="col-9">
                     Cat Chow Adulto
                     Cat Chow Gatitos
@@ -440,15 +440,6 @@
                 <hr />
 
                 <div class="row mb-4">
-                  <div class="col-md-4 col-6">
-                    <label class="mb-2">PARA RAZAS:</label>
-                    <select
-                      class="form-select border border-secondary"
-                      style="height: 35px"
-                    >
-                      <option>Todas las razas</option>
-                    </select>
-                  </div>
                   <!-- col.// -->
                   <div class="col-md-4 col-6 mb-3">
                     <label class="mb-2 d-block">CANTIDAD</label>
@@ -479,7 +470,7 @@
                     </div>
                   </div>
                 </div>
-                <a href="#" class="btn btn-success shadow-0"> Comprar ahora </a>
+                <a href="#" class="btn shadow-0 btn-primary text-white me-1" > Comprar ahora </a>
                 <a href="#" class="btn btn-primary shadow-0">
                   <i class="me-1 fa fa-shopping-basket"></i> Agregar al carrito
                 </a>
@@ -488,6 +479,7 @@
           </div>
         </div>
       </section>
+      
       <!-- encabezado 2 -->
       <div class="row mt-3 pt-3 border-top">
         <div class="col-10 fs-3 fw-bold">Tambien te sugerimos</div>

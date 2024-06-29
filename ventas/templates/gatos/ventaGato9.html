@@ -34,8 +34,8 @@
     
       <nav class="navbar navbar-expand-xl navbar-dark  ">
         <div class="container"> 
-            <a class="navbar-brand" href="/index.html">
-                <img class="border25" src="/logo.jpg" alt="" height="80">
+            <a class="navbar-brand" href="{% url 'index'%}">
+                <img class="border25" src="{% static 'Img/logo.jpg'%}" alt="" height="80">
             </a>
             <!-- Botón de hamburguesa -->
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#menulateral">
@@ -58,10 +58,10 @@
                     <!-- Lista de navegación -->
                     <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                       <li class="nav-item" style="margin-right: 5px;">
-                        <a class="nav-link" href="/index.html">Inicio</a>
+                        <a class="nav-link"  href="{% url 'index'%}">Inicio</a>
                       </li>
                       <li class="nav-item ">
-                        <a class="nav-link" href="/ofertas.html">Ofertas</a>
+                        <a class="nav-link"  href="{% url 'ofertas'%}">Ofertas</a>
                     </li>
                       <li class="nav-item">
                         <div>
@@ -70,7 +70,7 @@
                         </div>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link" href="/registrarse.html">
+                        <a class="nav-link" href="{% url 'registrarse'%}">
                           <i class="bi">| </i>Registrarse
                           </a>
                     </li>
@@ -129,8 +129,8 @@
             </section>
         </div>
       </nav>
-       <!-- segundo navbar -->
-       <nav class="navbar navbar-expand-lg " style="background-color: rgba(197, 151, 0, 0.233);">
+      <!-- segundo navbar -->
+      <nav class="navbar navbar-expand-lg " style="background-color: rgba(197, 151, 0, 0.233);">
         <div class="container-fluid">
           <div class="collapse navbar-collapse" id="navbarOfertas">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -161,7 +161,7 @@
                 </a>
                 <ul class="dropdown-menu">
                   <li>
-                    <a class="dropdown-item mb-1" href="ofertas.html">
+                    <a class="dropdown-item mb-1"  href="{% url 'ofertas'%}">
                       <i class="fa-solid fa-lightbulb me-1 text-warning"></i>Mas
                       vendido</a
                     >
@@ -219,9 +219,9 @@
               <div class="mb-3" style="max-width: 540px">
                 <div class="row g-0">
                   <div class="col-md-5">
-                    <img
-                      src="/Img/Gato1.webp"
-                      class="img-fluid rounded-start"
+                    <img 
+                      src="{% static 'Img/Gato9.png'%}"
+                      class="d-block w-100"
                       alt="..."
                     />
                   </div>
@@ -275,215 +275,212 @@
       </div>
       <!-- detalle -->
       <section class="py-5">
-  <div class="container">
-    <div class="row gx-5">
-      <aside class="col-lg-6">
-        
-        <div class="border rounded-4 mb-3 d-flex justify-content-center">
-          <a
-            data-fslightbox="mygalley"
-            class="rounded-4"
-            target="_blank"
-            data-type="image"
-            href="/Img/Gato9.png"
-            class="rounded mx-auto d-block"
-            alt="..."
-          >
-            <img
-              style="max-width: 100%; height: 350px; margin: auto"
-              class="rounded-4 fit"
-              src="/Img/Gato9.png"
-              class="rounded mx-auto d-block"
-              alt="..."
-            />
-          </a>
-        </div>
-        <div class="d-flex justify-content-center mb-3">
-          <a
-            data-fslightbox="mygalley"
-            class="border mx-1 rounded-2"
-            target="_blank"
-            data-type="image"
-            href="/Img/Gato9.png"
-            class="rounded mx-auto d-block"
-            alt="..."
-            class="item-thumb"
-          >
-            <img
-              width="60"
-              height="60"
-              class="rounded-2"
-              src="/Img/Gato9.png"
-              class="rounded mx-auto d-block"
-              alt="..."
-            />
-          </a>
-          <a
-            data-fslightbox="mygalley"
-            class="border mx-1 rounded-2"
-            target="_blank"
-            data-type="image"
-            href="/Img/Gato9.webp"
-            class="rounded mx-auto d-block"
-            alt="..."
-            class="item-thumb"
-          >
-            <img
-              width="60"
-              height="60"
-              class="rounded-2"
-              src="/Img/Gato9.webp"
-              class="rounded mx-auto d-block"
-              alt="..."
-            />
-          </a>
-          <a
-            data-fslightbox="mygalley"
-            class="border mx-1 rounded-2"
-            target="_blank"
-            data-type="image"
-            href="/Img/Gato9.webp"
-            class="rounded mx-auto d-block"
-            alt="..."
-            class="item-thumb"
-          >
-            <img
-              width="60"
-              height="60"
-              class="rounded-2"
-              src="/Img/Gato9.webp"
-              class="rounded mx-auto d-block"
-              alt="..."
-            />
-          </a>
-          <a
-            data-fslightbox="mygalley"
-            class="border mx-1 rounded-2"
-            target="_blank"
-            data-type="image"
-            href="/Img/Gato3.webp"
-            class="rounded mx-auto d-block"
-            alt="..."
-            class="item-thumb"
-          >
-            <img
-              width="60"
-              height="60"
-              class="rounded-2"
-              src="/Img/Gato3.webp"
-              class="rounded mx-auto d-block"
-              alt="..."
-            />
-          </a>
-        </div>
-
-      </aside>
-      <main class="col-lg-6">
-        <div class="ps-lg-3">
-          <h4 class="title text-dark">
-            Super casa de gato <br />
-          </h4>
-          <div class="d-flex flex-row my-3">
-            <div class="text-warning mb-1 me-2">
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <span class="ms-1"> 4.0</span>
-            </div>
-            <span class="text-muted"
-              ><i class="fas fa-shopping-basket fa-sm mx-1"></i>7
-              ordenes</span
-            >
-            <span class="text-success ms-2">En existencias</span>
-          </div>
-
-          <div class="mb-3">
-            <span class="h5">$12.900</span>
-          </div>
-
-          <p>
-            La casa para gatos es una espaciosa estructura que se cuelga en la pared, 
-            proporcionando un refugio elevado y seguro para tu felino. Con múltiples 
-            plataformas y escondites, está diseñada para fomentar el ejercicio y la 
-            exploración. Fabricada con materiales duraderos y de alta calidad, esta 
-            casa es ideal para cualquier hogar, ofreciendo a tu gato un espacio 
-            exclusivo y estimulante para descansar y jugar.
-          </p>
-
-          <div class="row">
-            <dt class="col-3">RAZA</dt>
-            <dd class="col-9">mediana/grande</dd>
-
-            <dt class="col-3">INGREDIENTES</dt>
-            <dd class="col-9">
-              --------------------
-            </dd>
-
-            <dt class="col-3">INFORMACION NUTRICIONAL</dt>
-
-            <dd class="col-9">
-              --------------------
+        <div class="container">
+          <div class="row gx-5">
+            <aside class="col-lg-6">
               
-            </dd>
-
-            <dt class="col-3">RECOMENDACIONES</dt>
-            <dd class="col-9">
-              --------------------
-              
-            </dd>
-          </div>
-          <hr />
-
-          <div class="row mb-4">
-            <div class="col-md-4 col-6">
-              <label class="mb-2">PARA RAZAS:</label>
-              <select
-                class="form-select border border-secondary"
-                style="height: 35px"
-              >
-                <option>Todas las razas</option>
-              </select>
-            </div>
-            <!-- col.// -->
-            <div class="col-md-4 col-6 mb-3">
-              <label class="mb-2 d-block">CANTIDAD</label>
-              <div class="input-group mb-3" style="width: 170px">
-                <button
-                  class="btn btn-white border border-secondary px-3"
-                  type="button"
-                  id="button-addon1"
-                  data-mdb-ripple-color="dark"
+              <div class="border rounded-4 mb-3 d-flex justify-content-center">
+                <a
+                  data-fslightbox="mygalley"
+                  class="rounded-4"
+                  target="_blank"
+                  data-type="image" 
+                  src="{% static 'Img/Gato9.png'%}"
+                  class="rounded mx-auto d-block"
+                  alt="..."
                 >
-                  <i class="fas fa-minus"></i>
-                </button>
-                <input
-                  type="text"
-                  class="form-control text-center border border-secondary"
-                  placeholder="1"
-                  aria-label="Example text with button addon"
-                  aria-describedby="button-addon1"
-                />
-                <button
-                  class="btn btn-white border border-secondary px-3"
-                  type="button"
-                  id="button-addon2"
-                  data-mdb-ripple-color="dark"
-                >
-                  <i class="fas fa-plus"></i>
-                </button>
+                  <img
+                    style="max-width: 100%; height: 350px; margin: auto"
+                    class="rounded-4 fit"
+                    src="{% static 'Img/Gato9.png'%}"
+                    class="rounded mx-auto d-block"
+                    alt="..."
+                  />
+                </a>
               </div>
-            </div>
+              <div class="d-flex justify-content-center mb-3">
+                <a
+                  data-fslightbox="mygalley"
+                  class="border mx-1 rounded-2"
+                  target="_blank"
+                  data-type="image"
+                  src="{% static 'Img/Gato9.png'%}"
+                  class="rounded mx-auto d-block"
+                  alt="..."
+                  class="item-thumb"
+                >
+                  <img
+                    width="60"
+                    height="60"
+                    class="rounded-2"
+                    src="{% static 'Img/Gato9.png'%}"
+                    class="rounded mx-auto d-block"
+                    alt="..."
+                  />
+                </a>
+                <a
+                  data-fslightbox="mygalley"
+                  class="border mx-1 rounded-2"
+                  target="_blank"
+                  data-type="image"
+                  src="{% static 'Img/Gato9.png'%}"
+                  class="rounded mx-auto d-block"
+                  alt="..."
+                  class="item-thumb"
+                >
+                  <img
+                    width="60"
+                    height="60"
+                    class="rounded-2"
+                    src="{% static 'Img/Gato9.png'%}"
+                    class="rounded mx-auto d-block"
+                    alt="..."
+                  />
+                </a>
+                <a
+                  data-fslightbox="mygalley"
+                  class="border mx-1 rounded-2"
+                  target="_blank"
+                  data-type="image"
+                  src="{% static 'Img/Gato9.png'%}"
+                  class="rounded mx-auto d-block"
+                  alt="..."
+                  class="item-thumb"
+                >
+                  <img
+                    width="60"
+                    height="60"
+                    class="rounded-2"
+                    src="{% static 'Img/Gato9.png'%}"
+                    class="rounded mx-auto d-block"
+                    alt="..."
+                  />
+                </a>
+                <a
+                  data-fslightbox="mygalley"
+                  class="border mx-1 rounded-2"
+                  target="_blank"
+                  data-type="image"
+                  src="{% static 'Img/Gato9.png'%}"
+                  class="rounded mx-auto d-block"
+                  alt="..."
+                  class="item-thumb"
+                >
+                  <img
+                    width="60"
+                    height="60"
+                    class="rounded-2"
+                    src="{% static 'Img/Gato9.png'%}"
+                    class="rounded mx-auto d-block"
+                    alt="..."
+                  />
+                </a>
+              </div>
+
+            </aside>
+            <main class="col-lg-6">
+              <div class="ps-lg-3">
+                <h4 class="title text-dark">
+                  Alimento Humedo Gato Adulto Sabor Cat Chow, 1 kgr <br />
+                </h4>
+                <div class="d-flex flex-row my-3">
+                  <div class="text-warning mb-1 me-2">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <span class="ms-1"> 4.0</span>
+                  </div>
+                  <span class="text-muted"
+                    ><i class="fas fa-shopping-basket fa-sm mx-1"></i>7
+                    ordenes</span
+                  >
+                  <span class="text-success ms-2">En existencias</span>
+                </div>
+
+                <div class="mb-3">
+                  <span class="h5">$8900</span>
+                </div>
+
+                <p>
+                  Cat Chow es un alimento para gatos que ofrece una nutrición completa y equilibrada. 
+                  Disponible en formulaciones para todas las etapas de vida, desde gatitos hasta adultos mayores, 
+                  se adapta a sus necesidades específicas. Con ingredientes de alta calidad, proporciona proteínas 
+                  esenciales, vitaminas y minerales para una salud óptima. Su sabor delicioso y croqueta crujiente 
+                  aseguran que tu gato disfrute cada comida, manteniendo su sistema inmunológico fuerte y su pelaje saludable.
+                </p>
+
+                <div class="row">
+                  <dt class="col-3">RAZA</dt>
+                  <dd class="col-9">mediana/grande</dd>
+
+                  <dt class="col-3">INGREDIENTES</dt>
+                  <dd class="col-9">
+                    Pollo
+                    Harina de subproductos de pollo
+                  </dd>
+
+                  <dt class="col-3">INFORMACION NUTRICIONAL</dt>
+
+                  <dd class="col-9">
+                    Información Nutricional (porción de 100 g de alimento):
+                    Proteína Cruda: 30%
+                    Grasa Cruda: 10%
+                    Fibra Cruda: 3%
+                    
+                  </dd>
+
+                  <dt class="col-3">RECOMENDACIONES</dt>
+                  <dd class="col-9">
+                    Cat Chow Adulto
+                    Cat Chow Gatitos
+                    
+                  </dd>
+                </div>
+                <hr />
+
+                <div class="row mb-4">
+                  <!-- col.// -->
+                  <div class="col-md-4 col-6 mb-3">
+                    <label class="mb-2 d-block">CANTIDAD</label>
+                    <div class="input-group mb-3" style="width: 170px">
+                      <button
+                        class="btn btn-white border border-secondary px-3"
+                        type="button"
+                        id="button-addon1"
+                        data-mdb-ripple-color="dark"
+                      >
+                        <i class="fas fa-minus"></i>
+                      </button>
+                      <input
+                        type="text"
+                        class="form-control text-center border border-secondary"
+                        placeholder="1"
+                        aria-label="Example text with button addon"
+                        aria-describedby="button-addon1"
+                      />
+                      <button
+                        class="btn btn-white border border-secondary px-3"
+                        type="button"
+                        id="button-addon2"
+                        data-mdb-ripple-color="dark"
+                      >
+                        <i class="fas fa-plus"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <a href="#" class="btn shadow-0 btn-primary text-white me-1" > Comprar ahora </a>
+                <a href="#" class="btn btn-primary shadow-0">
+                  <i class="me-1 fa fa-shopping-basket"></i> Agregar al carrito
+                </a>
+              </div>
+            </main>
           </div>
-          <a href="#" class="btn btn-success shadow-0"> Comprar ahora </a>
-          <a href="#" class="btn btn-primary shadow-0">
-            <i class="me-1 fa fa-shopping-basket"></i> Agregar al carrito
-          </a>
         </div>
-      </main>
-    </div>
-  </div>
       </section>
+
+      
       <!-- encabezado 2 -->
       <div class="row mt-3 pt-3 border-top">
         <div class="col-10 fs-3 fw-bold">Tambien te sugerimos</div>

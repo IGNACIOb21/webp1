@@ -35,6 +35,7 @@ def ventas_perros(request):
     context = {}
     return render(request, 'ventanas/ventas_perros.html', context)
 
+
 #Ventanas de productos Perros
 
 def ventas_perro1(request):
