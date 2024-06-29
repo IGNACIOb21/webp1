@@ -6,11 +6,8 @@ urlpatterns = [
     path('bienvenida/', views.bienvenida, name='bienvenida'),
     path('registrarse/', views.registrarse, name='registrarse'),
 
-<<<<<<< Updated upstream
-    path('ofertas/', views.ofertas, name='ofertas'),
-=======
 
->>>>>>> Stashed changes
+    path('ofertas/', views.ofertas, name='ofertas'),
     path('ventana_gato/', views.ventana_gato, name='ventana_gato'),
     path('ventana_recien_llegados/', views.ventana_recien_llegados, name='ventana_recien_llegados'),
     path('ventana_perros/', views.ventas_perros, name='ventana_perros'),
@@ -41,7 +38,7 @@ urlpatterns = [
     path('ventaGato23/', views.ventaGato23, name='ventaGato23'),
 
 
-<<<<<<< Updated upstream
+
     path('ventas_perro1/', views.ventasperro1, name='ventas_perro1'),
     path('ventas_perro2/', views.ventasperro2, name='ventas_perro2'),
     path('ventas_perro3/', views.ventasperro3, name='ventas_perro3'),
@@ -49,16 +46,7 @@ urlpatterns = [
     path('ventas_perro5/', views.ventasperro5, name='ventas_perro5'),
     path('ventas_perro6/', views.ventasperro6, name='ventas_perro6'),
     path('ventas_perro7/', views.ventasperro7, name='ventas_perro7'),
-=======
-    path('ventas.perro1/', views.ventasperro1, name='ventas.perro1'),
-    path('ventas.perro2/', views.ventasperro2, name='ventas.perro2'),
-    path('ventas.perro3/', views.ventasperro3, name='ventas.perro3'),
-    path('ventas.perro4/', views.ventasperro4, name='ventas.perro4'),
-    path('ventas.perro5/', views.ventasperro5, name='ventas.perro5'),
-    path('ventas.perro6/', views.ventasperro6, name='ventas.perro6'),
-    path('ventas.perro7/', views.ventasperro7, name='ventas.perro7'),
 
->>>>>>> Stashed changes
 
    
     path('recien_llegados2/', views.recien_llegados2, name='recien_llegados2'),
