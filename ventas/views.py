@@ -1,4 +1,5 @@
-from django.shortcuts import render
+from django.shortcuts import render , redirect 
+from .models import Registrar
 
 # Inicio
 
@@ -10,9 +11,18 @@ def bienvenida(request):
     context = {}
     return render(request, 'inicio/bienvenida.html', context)
 
+#registrar tendra datos
 def registrarse(request):
-    context = {}
-    return render(request, 'inicio/registrarse.html', context)
+    if request.method == "POST":
+        emailt=request.POST["email"]
+        passwordr=request.POST["password"]
+        form=Registrar.objects.create(email = emailt,password = passwordr)
+        form.save()
+        return render(request, 'inicio/index.html', {'form': form})
+    else:
+        form = Registrar()
+    return render(request, 'inicio/index.html', {'form': form})
+
 
 def prueba(request):
     context = {}
