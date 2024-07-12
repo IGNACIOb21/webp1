@@ -130,7 +130,9 @@
               <input type="password"  id="clave" required>
               <label >contraseña</label>
             </div>
-            <div class="recordar">¿Olvido la contraseña?</div>
+            <div class="registrarse">
+              ¿Olvido la <a href="{% url 'olvide_contra'%}">contraseña</a>?
+            </div>
             <input type="submit" value="Inicio" onclick="loguear()">
             <div class="registrarse">
               Crear cuenta en <a href="{% url 'registrarse'%}">registro</a>

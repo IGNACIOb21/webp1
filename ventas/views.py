@@ -1,8 +1,9 @@
 from django.shortcuts import render , redirect 
 from .models import Registrar
+from django.contrib import messages
+
 
 # Inicio
-
 def index(request):
     context = {}
     return render(request, 'inicio/index.html', context)
@@ -14,19 +15,53 @@ def bienvenida(request):
 #registrar tendra datos
 def registrarse(request):
     if request.method == "POST":
-        emailt=request.POST["email"]
-        passwordr=request.POST["password"]
-        form=Registrar.objects.create(email = emailt,password = passwordr)
-        form.save()
-        return render(request, 'inicio/index.html', {'form': form})
-    else:
-        form = Registrar()
-    return render(request, 'inicio/index.html', {'form': form})
+        emailt = request.POST["email"]
+        passwordr = request.POST["password"]
+        con_password = request.POST["con_password"]
 
+        if passwordr == con_password:
+            form = Registrar.objects.create(email=emailt, password=passwordr)
+            form.save()
+            return redirect('index')  # Redirecciona después de guardar
+        else:
+            error_message = "Las contraseñas no coinciden"
+            return render(request, 'inicio/registrarse.html', {'error_message': error_message})
 
-def prueba(request):
-    context = {}
-    return render(request, 'inicio/prueba.html', context)
+    return render(request, 'inicio/registrarse.html')
+
+def olvide_contra(request):
+    if request.method == "POST":
+        email_ingresado = request.POST.get("email")
+        try:
+            registrado = Registrar.objects.get(email=email_ingresado)
+            return redirect('cambiarclave')  
+        except Registrar.DoesNotExist:
+            pass  
+    return render(request, 'inicio/olvide_contra.html')
+
+def cambiarclave(request):
+    if request.method == "POST":
+        email_ingresado = request.POST.get("email")
+        passwordr = request.POST["contraseña"]
+        con_password = request.POST["contraseñarepit"]
+        
+        if passwordr == con_password:
+            try:
+                registrado = Registrar.objects.get(email=email_ingresado)
+                registrado.password = passwordr
+                registrado.save()
+                messages.success(request, '¡Contraseña cambiada exitosamente!')
+                return redirect('index')  # Redirecciona después de guardar
+            except Registrar.DoesNotExist:
+                pass  # Manejar caso donde el correo no existe en la base de datos
+        else:
+            error_message = "Las contraseñas no coinciden"
+            return render(request, 'inicio/cambiarclave.html', {'error_message': error_message, 'email': email_ingresado})
+
+    # Si es GET o si hay errores, renderiza el formulario nuevamente
+    email = request.GET.get('email')
+    return render(request, 'inicio/cambiarclave.html', {'email': email})
+
 
 # Ventanas
 def ofertas(request):
