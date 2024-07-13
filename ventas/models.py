@@ -11,6 +11,7 @@ class Producto(models.Model):
     def __str__(self):
         return self.nombre
     
+    
 class Registrar(models.Model):
     id_registrar = models.AutoField(primary_key=True)
     email = models.EmailField(unique=True, max_length=100)

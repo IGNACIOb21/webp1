@@ -113,7 +113,10 @@
 
     <div class="offcanvas offcanvas-end bg-light " tabindex="-1" id="offIniciodesecion" aria-labelledby="offcanvasRightLabel">
       <div class="offcanvas-header">
-          <h2 class="offcanvas-title" id="offcanvasRightLabel" style="font-family: Geneva, sans-serif;"> <i class="bi bi-person" ></i>
+          <h2 class="offcanvas-title" id="offcanvasRightLabel" style="font-family: Geneva, sans-serif;">
+           <a href="{% url 'cuenta'%}" >
+            <i class="bi bi-person" ></i>
+           </a>
           <samp><hr></samp>
           </h2>
           <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -130,7 +133,9 @@
               <input type="password"  id="clave" required>
               <label >contraseña</label>
             </div>
-            <div class="recordar">¿Olvido la contraseña?</div>
+            <div class="registrarse">
+              ¿Olvido la <a href="{% url 'olvide_contra'%}">contraseña</a>?
+            </div>
             <input type="submit" value="Inicio" onclick="loguear()">
             <div class="registrarse">
               Crear cuenta en <a href="{% url 'registrarse'%}">registro</a>
