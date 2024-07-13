@@ -1,5 +1,6 @@
 from django.shortcuts import render , redirect 
 from .models import Registrar
+from django.contrib.auth.hashers import make_password
 from django.contrib import messages
 
 
@@ -40,28 +41,26 @@ def olvide_contra(request):
     return render(request, 'inicio/olvide_contra.html')
 
 def cambiarclave(request):
-    if request.method == "POST":
-        email_ingresado = request.POST.get("email")
-        passwordr = request.POST["contraseña"]
-        con_password = request.POST["contraseñarepit"]
-        
-        if passwordr == con_password:
+    if request.method == 'POST':
+        email_ingresado = request.POST['email']
+        nueva_contraseña = request.POST['contraseña']
+        repetir_contraseña = request.POST['contraseñarepit']
+        if nueva_contraseña == repetir_contraseña:
             try:
-                registrado = Registrar.objects.get(email=email_ingresado)
-                registrado.password = passwordr
-                registrado.save()
-                messages.success(request, '¡Contraseña cambiada exitosamente!')
-                return redirect('index')  # Redirecciona después de guardar
+                usuario = Registrar.objects.get(email=email_ingresado)
+                usuario.password = make_password(nueva_contraseña)
+                usuario.save()
+                messages.success(request, '¡Contraseña actualizada exitosamente!')
+                return redirect('index')
             except Registrar.DoesNotExist:
-                pass  # Manejar caso donde el correo no existe en la base de datos
+                messages.error(request, 'El usuario con ese email no existe.')
         else:
-            error_message = "Las contraseñas no coinciden"
-            return render(request, 'inicio/cambiarclave.html', {'error_message': error_message, 'email': email_ingresado})
+            messages.error(request, 'Las contraseñas no coinciden.')
+    return render(request, 'inicio/cambiarclave.html')
 
-    # Si es GET o si hay errores, renderiza el formulario nuevamente
-    email = request.GET.get('email')
-    return render(request, 'inicio/cambiarclave.html', {'email': email})
-
+def cuenta(request):
+    context = {}
+    return render(request, 'inicio/cuenta.html', context)
 
 # Ventanas
 def ofertas(request):
