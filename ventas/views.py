@@ -58,9 +58,28 @@ def cambiarclave(request):
             messages.error(request, 'Las contraseñas no coinciden.')
     return render(request, 'inicio/cambiarclave.html')
 
-def cuenta(request):
+def eliminarcuenta(request):
+    if request.method == "POST":
+        email = request.POST.get('email')
+        try:
+            usuario = Registrar.objects.get(email=email)
+            usuario.delete()  
+            messages.success(request, 'La cuenta ha sido eliminada exitosamente.')
+            return redirect('index')  
+        except Registrar.DoesNotExist:
+            messages.error(request, 'El email proporcionado no existe.')
     context = {}
-    return render(request, 'inicio/cuenta.html', context)
+    return render(request, 'inicio/eliminarcuenta.html', context)
+
+def cuenta(request):
+    if request.method == "POST":
+        email_ingresado = request.POST.get("email")
+        try:
+            registrado = Registrar.objects.get(email=email_ingresado)
+            return redirect('eliminarcuenta')  
+        except Registrar.DoesNotExist:
+            pass  
+    return render(request, 'inicio/cuenta.html')
 
 # Ventanas
 def ofertas(request):
