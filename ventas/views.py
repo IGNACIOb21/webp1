@@ -1,10 +1,27 @@
-from django.shortcuts import render , redirect 
-from .models import Registrar
-from django.contrib.auth.hashers import make_password
-from django.contrib import messages
-
-
+from django.shortcuts import render, redirect, get_object_or_404
+from .forms import ProductoForm  
+from .models import Producto
 # Inicio
+
+def crear_producto(request):
+    if request.method == 'POST':
+        form = ProductoForm(request.POST, request.FILES)
+        if form.is_valid():
+            form.save()
+            return redirect('crear_producto')
+    else:
+        form = ProductoForm()
+    return render(request, 'ventanas/crear_producto.html', {'form': form})
+
+def ventana_gato(request):
+    productos = Producto.objects.all()
+    return render(request, 'ventanas/ventana_gato.html', {'productos': productos})
+
+def detalle_producto(request, producto_id):
+    producto = get_object_or_404(Producto, pk=producto_id)
+    return render(request, 'gatos/detalle_producto.html', {'producto': producto})
+
+
 def index(request):
     context = {}
     return render(request, 'inicio/index.html', context)
@@ -13,8 +30,8 @@ def bienvenida(request):
     context = {}
     return render(request, 'inicio/bienvenida.html', context)
 
-#registrar tendra datos
 def registrarse(request):
+<<<<<<< HEAD
     if request.method == "POST":
         emailt = request.POST["email"]
         passwordr = request.POST["password"]
@@ -80,15 +97,15 @@ def cuenta(request):
         except Registrar.DoesNotExist:
             pass  
     return render(request, 'inicio/cuenta.html')
+=======
+    context = {}
+    return render(request, 'inicio/registrarse.html', context)
+>>>>>>> Django
 
 # Ventanas
 def ofertas(request):
     context = {}
     return render(request, 'ventanas/ofertas.html', context)
-
-def ventana_gato(request):
-    context = {}
-    return render(request, 'ventanas/ventana_gato.html', context)
 
 def ventana_recien_llegados(request):
     context = {}

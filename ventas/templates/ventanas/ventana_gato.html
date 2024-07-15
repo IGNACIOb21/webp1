@@ -181,7 +181,7 @@
             </div>
 
           <div class="container">
-            <div class="row">
+            <!-- <div class="row">
               <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
                 <div class="border text-center bg-opacity-75">
                   <img  class="d-block w-100"  src="{% static 'Img/Gato1.webp' %}" >
@@ -408,16 +408,40 @@
                   <div class="card-body">
                     <h5 class="card-title">Mochila de gato</h5>
                     <p class="card-text">Para que tu gato no se quede en casa y salga contigo todoas las veses ...</p>
-                    <a href="{% url 'ventaGato23'%}"class="btn btn-primary">ver producto</a>
+                    <a href="{% url 'ventaGato22'%}" class="btn btn-primary">ver producto</a>
                   </div>
                 </div>
-              </div>
-
+              </div> -->
+              <div class="container mt-5">
+                <h1 class="text-center">Lista de Productos</h1>
+                <div class="row">
+                  {% for producto in productos %}
+                  <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
+                      <div class="card border text-center bg-opacity-75">
+                          {% if producto.imagen %}
+                              <img class="card-img-top d-block w-100" src="{{ producto.imagen.url }}" alt="{{ producto.nombre }}">
+                          {% else %}
+                              <img class="card-img-top d-block w-100" src="{% static 'Img/default.jpg' %}" alt="Default Image">
+                          {% endif %}
+                          <div class="card-body">
+                              <h5 class="card-title">{{ producto.nombre }}</h5>
+                              <p class="card-text">{{ producto.descripcion }}</p>
+                              <p class="card-text"><strong>{{ producto.precio }}</strong></p>
+                              <a href="{% url 'detalle_producto' producto.codigo %}" class="btn btn-primary">Ver producto</a>
+                          </div>
+                      </div>
+                  </div>
+                {% endfor %}
+                </div>
+            </div>
             </div>
           </div>
           </div>
       </div>
   </div>
+  
+        
+          
 
   <footer class="text-center text-white bg-dark mt-4">
     <div class="container p-4">
