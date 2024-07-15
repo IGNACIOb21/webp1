@@ -8,7 +8,7 @@ urlpatterns = [
     path('olvide_contra/', views.olvide_contra, name='olvide_contra'),
     path('cambiarclave/', views.cambiarclave, name='cambiarclave'),
     path('cuenta/', views.cuenta, name='cuenta'),
-
+    path('eliminarcuenta/', views.eliminarcuenta, name='eliminarcuenta'),
 
     path('ofertas/', views.ofertas, name='ofertas'),
     path('ventana_gato/', views.ventana_gato, name='ventana_gato'),
