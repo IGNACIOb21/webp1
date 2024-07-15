@@ -17,7 +17,7 @@ urlpatterns = [
     path('ventana_gato/<int:producto_id>/', views.detalle_producto, name='detalle_producto'),
 
     path('ventana_gato/', views.ventana_gato, name='ventana_gato'),
-    path('ventana_recien_llegados/', views.ventana_recien_llegados, name='ventana_recien_llegados'),
+    path('ventana_recien_llegados/', views.recien_llegados, name='ventana_recien_llegados'),
     path('ventana_perros/', views.ventas_perros, name='ventana_perros'),
 
 

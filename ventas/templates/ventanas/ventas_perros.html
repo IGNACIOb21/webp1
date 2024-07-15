@@ -117,20 +117,6 @@
 
   <div class="container mt-5">
     <div class="row">
-        <div class="col-md-3">
-            <div class="card">
-                <div class="card-header">
-                    Departamentos
-                </div>
-                <div class="card-body category-list">
-                    <ul class="list-group">
-                      <li class="list-group-item">Precio</li>
-                      <li class="list-group-item">Marcas</li>
-                      <li class="list-group-item">Tipo</li>
-                    </ul>
-                </div>
-            </div>
-        </div> 
           <div class="col-lg-9 order-lg-12">
             <div class="container-fluid py-4 ">
               <div id="slider-codersfree1" class="carousel slide" data-bs-ride="carousel">
@@ -180,7 +166,7 @@
           </div>
 
           <div class="container">
-            <div class="row">
+            <!-- <div class="row">
               <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
                 <div class="border text-center bg-opacity-75">
                   <img src="{% static 'Img/Alimento_Perro_adulto.webp' %}">
@@ -411,7 +397,29 @@
                   </div>
                 </div>
               </div>
-            </div>
+            </div> -->
+            <div class="container mt-5">
+              <h1 class="text-center">Lista de Productos</h1>
+              <div class="row">
+                {% for producto in productos %}
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
+                    <div class="card border text-center bg-opacity-75">
+                        {% if producto.imagen %}
+                            <img class="card-img-top d-block w-100" src="{{ producto.imagen.url }}" alt="{{ producto.nombre }}">
+                        {% else %}
+                            <img class="card-img-top d-block w-100" src="{% static 'Img/default.jpg' %}" alt="Default Image">
+                        {% endif %}
+                        <div class="card-body">
+                            <h5 class="card-title">{{ producto.nombre }}</h5>
+                            <p class="card-text">{{ producto.descripcion }}</p>
+                            <p class="card-text"><strong>{{ producto.precio }}</strong></p>
+                            <a href="{% url 'detalle_producto' producto.codigo %}" class="btn btn-primary">Ver producto</a>
+                        </div>
+                    </div>
+                </div>
+              {% endfor %}
+              </div>
+          </div>
           </div>
         </div>
     </div>

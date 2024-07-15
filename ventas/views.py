@@ -1,20 +1,45 @@
 from django.shortcuts import render, redirect, get_object_or_404
-from .forms import ProductoForm  
-from .models import Producto
+from .forms import ProductoForm
+from .models import Producto, Registrar 
+from django.contrib.auth.hashers import make_password
+from django.contrib import messages
 # Inicio
+
+# def crear_producto(request):
+#     if request.method == 'POST':
+#         form = ProductoForm(request.POST, request.FILES)
+#         if form.is_valid():
+#             form.save()
+#             return redirect('crear_producto')
+#     else:
+#         form = ProductoForm()
+#     return render(request, 'ventanas/crear_producto.html', {'form': form})
 
 def crear_producto(request):
     if request.method == 'POST':
         form = ProductoForm(request.POST, request.FILES)
         if form.is_valid():
-            form.save()
-            return redirect('crear_producto')
+            ventana = form.cleaned_data['ventana']
+            producto = form.save(commit=False)
+            producto.ventana = ventana
+            producto.save()
+            messages.success(request, 'Producto creado exitosamente.')
+            
+            # Redireccionar según la ventana seleccionada
+            if ventana == 'ventana_gato':
+                return redirect('ventana_gato') 
+            elif ventana == 'ventana_perros':
+                return redirect('ventana_perros') 
+            elif ventana == 'recien_llegados':
+                return redirect('ventana_recien_llegados')  
     else:
         form = ProductoForm()
-    return render(request, 'ventanas/crear_producto.html', {'form': form})
+    
+    context = {'form': form}
+    return render(request, 'ventanas/crear_producto.html', context)
 
 def ventana_gato(request):
-    productos = Producto.objects.all()
+    productos = Producto.objects.filter(ventana='ventana_gato')
     return render(request, 'ventanas/ventana_gato.html', {'productos': productos})
 
 def detalle_producto(request, producto_id):
@@ -31,7 +56,6 @@ def bienvenida(request):
     return render(request, 'inicio/bienvenida.html', context)
 
 def registrarse(request):
-<<<<<<< HEAD
     if request.method == "POST":
         emailt = request.POST["email"]
         passwordr = request.POST["password"]
@@ -97,23 +121,19 @@ def cuenta(request):
         except Registrar.DoesNotExist:
             pass  
     return render(request, 'inicio/cuenta.html')
-=======
-    context = {}
-    return render(request, 'inicio/registrarse.html', context)
->>>>>>> Django
 
 # Ventanas
 def ofertas(request):
     context = {}
     return render(request, 'ventanas/ofertas.html', context)
 
-def ventana_recien_llegados(request):
-    context = {}
-    return render(request, 'ventanas/ventana_recien_llegados.html', context)
+def recien_llegados(request):
+    productos = Producto.objects.filter(ventana='recien_llegados')
+    return render(request, 'ventanas/ventana_recien_llegados.html', {'productos': productos})
 
 def ventas_perros(request):
-    context = {}
-    return render(request, 'ventanas/ventas_perros.html', context)
+    productos = Producto.objects.filter(ventana='ventas_perros')
+    return render(request, 'ventanas/ventas_perros.html', {'productos': productos})
 
 
 #Ventanas de productos Perros
