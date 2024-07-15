@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, get_object_or_404
 from .forms import ProductoForm  
 from .models import Producto
 # Inicio
@@ -16,6 +16,11 @@ def crear_producto(request):
 def ventana_gato(request):
     productos = Producto.objects.all()
     return render(request, 'ventanas/ventana_gato.html', {'productos': productos})
+
+def detalle_producto(request, producto_id):
+    producto = get_object_or_404(Producto, pk=producto_id)
+    return render(request, 'gatos/detalle_producto.html', {'producto': producto})
+
 
 def index(request):
     context = {}
