@@ -4,13 +4,12 @@ from . import views
 urlpatterns = [
     path('', views.index, name='index'),
     path('bienvenida/', views.bienvenida, name='bienvenida'),
-    path('registrarse/', views.registrarse, name='registrarse'),
-    path('olvide_contra/', views.olvide_contra, name='olvide_contra'),
-    path('cambiarclave/', views.cambiarclave, name='cambiarclave'),
-    path('cuenta/', views.cuenta, name='cuenta'),
-
-
     path('ofertas/', views.ofertas, name='ofertas'),
+    path('registrarse/', views.registrarse, name='registrarse'),
+
+    path('crear_producto/', views.crear_producto, name='crear_producto'),
+
+
     path('ventana_gato/', views.ventana_gato, name='ventana_gato'),
     path('ventana_recien_llegados/', views.ventana_recien_llegados, name='ventana_recien_llegados'),
     path('ventana_perros/', views.ventas_perros, name='ventana_perros'),
@@ -41,7 +40,6 @@ urlpatterns = [
     path('ventaGato23/', views.ventaGato23, name='ventaGato23'),
 
 
-
     path('ventas_perro1/', views.ventas_perro1, name='ventas_perro1'),
     path('ventas_perro2/', views.ventas_perro2, name='ventas_perro2'),
     path('ventas_perro3/', views.ventas_perro3, name='ventas_perro3'),
@@ -51,7 +49,6 @@ urlpatterns = [
     path('ventas_perro7/', views.ventas_perro7, name='ventas_perro7'),
 
 
-   
     path('recien_llegados2/', views.recien_llegados2, name='recien_llegados2'),
     path('recien_llegados3/', views.recien_llegados3, name='recien_llegados3'),
     path('recien_llegados4/', views.recien_llegados4, name='recien_llegados4'),

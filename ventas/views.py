@@ -1,10 +1,22 @@
-from django.shortcuts import render , redirect 
-from .models import Registrar
-from django.contrib.auth.hashers import make_password
-from django.contrib import messages
-
-
+from django.shortcuts import render, redirect
+from .forms import ProductoForm  
+from .models import Producto
 # Inicio
+
+def crear_producto(request):
+    if request.method == 'POST':
+        form = ProductoForm(request.POST, request.FILES)
+        if form.is_valid():
+            form.save()
+            return redirect('crear_producto')
+    else:
+        form = ProductoForm()
+    return render(request, 'ventanas/crear_producto.html', {'form': form})
+
+def ventana_gato(request):
+    productos = Producto.objects.all()
+    return render(request, 'ventanas/ventana_gato.html', {'productos': productos})
+
 def index(request):
     context = {}
     return render(request, 'inicio/index.html', context)
@@ -13,63 +25,14 @@ def bienvenida(request):
     context = {}
     return render(request, 'inicio/bienvenida.html', context)
 
-#registrar tendra datos
 def registrarse(request):
-    if request.method == "POST":
-        emailt = request.POST["email"]
-        passwordr = request.POST["password"]
-        con_password = request.POST["con_password"]
-
-        if passwordr == con_password:
-            form = Registrar.objects.create(email=emailt, password=passwordr)
-            form.save()
-            return redirect('index')  # Redirecciona después de guardar
-        else:
-            error_message = "Las contraseñas no coinciden"
-            return render(request, 'inicio/registrarse.html', {'error_message': error_message})
-
-    return render(request, 'inicio/registrarse.html')
-
-def olvide_contra(request):
-    if request.method == "POST":
-        email_ingresado = request.POST.get("email")
-        try:
-            registrado = Registrar.objects.get(email=email_ingresado)
-            return redirect('cambiarclave')  
-        except Registrar.DoesNotExist:
-            pass  
-    return render(request, 'inicio/olvide_contra.html')
-
-def cambiarclave(request):
-    if request.method == 'POST':
-        email_ingresado = request.POST['email']
-        nueva_contraseña = request.POST['contraseña']
-        repetir_contraseña = request.POST['contraseñarepit']
-        if nueva_contraseña == repetir_contraseña:
-            try:
-                usuario = Registrar.objects.get(email=email_ingresado)
-                usuario.password = make_password(nueva_contraseña)
-                usuario.save()
-                messages.success(request, '¡Contraseña actualizada exitosamente!')
-                return redirect('index')
-            except Registrar.DoesNotExist:
-                messages.error(request, 'El usuario con ese email no existe.')
-        else:
-            messages.error(request, 'Las contraseñas no coinciden.')
-    return render(request, 'inicio/cambiarclave.html')
-
-def cuenta(request):
     context = {}
-    return render(request, 'inicio/cuenta.html', context)
+    return render(request, 'inicio/registrarse.html', context)
 
 # Ventanas
 def ofertas(request):
     context = {}
     return render(request, 'ventanas/ofertas.html', context)
-
-def ventana_gato(request):
-    context = {}
-    return render(request, 'ventanas/ventana_gato.html', context)
 
 def ventana_recien_llegados(request):
     context = {}
